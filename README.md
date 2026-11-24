@@ -25,3 +25,7 @@ Current data is `dist/cars.json`. Rebuild with `python3 build_reports.py`; valid
 ## Minimal cards and background sample rotation — latest
 
 The visible car catalogue and report picker were removed at the user’s request. `build_home.py` now owns the bounded homepage presentation. `build_reports.py` rebuilds the ten static reports and emits the sample router from `dist/cars.json`. Generic sample actions use a shuffled session cycle; explicit Swift evidence links remain fixed. Do not restore the five-car collection from the earlier template. `minimal-cards-review-2026-11-24.md` maps all ten browser comments to changes and QA.
+
+## Swift report — focused review
+
+`sample-swift.html` now has its own minimal report treatment and richer gallery. Run `python3 build_swift_report.py` to rebuild only Swift; the full generator also invokes it last. The other nine reports retain their current designs. Review record: `swift-report-review-2026-11-24.md`. `python3 check-swift-review.py` checks content/gallery contracts and the dated non-Swift scope baseline.

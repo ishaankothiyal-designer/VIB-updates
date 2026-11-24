@@ -88,3 +88,7 @@ for page in D.glob('*.html'):
  document=soup(page.read_text())
  if not document.select_one('script[src="sample-router.js"]'):document.head.insert(0,soup('<script src="sample-router.js"></script>'))
  page.write_text(str(document))
+
+# Swift is a focused review treatment; other report designs remain on their current builder.
+from build_swift_report import build_swift_report
+build_swift_report()

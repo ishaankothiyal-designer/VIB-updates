@@ -1,0 +1,28 @@
+/* Swift-only gallery, reading explorer and preference-aware evidence arrival. */
+(()=>{
+ 'use strict';const config=JSON.parse(document.getElementById('swift-report-data').textContent);
+ const photos=config.photos;let selected=0;let returnFocus=null;
+ const main=document.getElementById('selected-photo'),caption=document.getElementById('selected-photo-caption'),count=document.getElementById('selected-photo-count'),open=document.querySelector('.gallery-open'),thumbs=[...document.querySelectorAll('.photo-thumb')];
+ const dialog=document.getElementById('photo-viewer'),viewer=document.getElementById('viewer-photo');
+ const friendly=photo=>'Maruti Suzuki Swift LXI — '+photo.label.toLowerCase()+' view';
+ function selectPhoto(index){selected=(index+photos.length)%photos.length;const photo=photos[selected];main.src=photo.src;main.alt=friendly(photo);caption.textContent=photo.label;count.textContent=(selected+1)+' of '+photos.length;open.setAttribute('aria-label','Open '+photo.label.toLowerCase()+' photo in full screen');thumbs.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===selected)));if(dialog.open)updateViewer();}
+ function updateViewer(){const photo=photos[selected];viewer.src=photo.src;viewer.alt=friendly(photo);document.getElementById('viewer-caption').textContent=photo.label;document.getElementById('viewer-position').textContent=(selected+1)+' of '+photos.length;}
+ thumbs.forEach((button,i)=>{button.addEventListener('click',()=>selectPhoto(i));button.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(i+1)%photos.length;else if(event.key==='ArrowLeft')next=(i+photos.length-1)%photos.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=photos.length-1;if(next!==undefined){event.preventDefault();selectPhoto(next);thumbs[next].focus();}});});
+ open.addEventListener('click',()=>{returnFocus=document.activeElement;updateViewer();dialog.showModal();document.body.classList.add('photo-viewer-open');dialog.querySelector('.viewer-close').focus();});
+ dialog.querySelector('.viewer-close').addEventListener('click',()=>dialog.close());
+ dialog.querySelector('.viewer-previous').addEventListener('click',()=>selectPhoto(selected-1));
+ dialog.querySelector('.viewer-next').addEventListener('click',()=>selectPhoto(selected+1));
+ dialog.addEventListener('keydown',event=>{if(event.key==='Tab'){const first=dialog.querySelector('.viewer-close'),last=dialog.querySelector('.viewer-next');if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();selectPhoto(selected+(event.key==='ArrowRight'?1:-1));}});
+ dialog.addEventListener('click',event=>{if(event.target===dialog){const b=dialog.getBoundingClientRect();if(event.clientX<b.left||event.clientX>b.right||event.clientY<b.top||event.clientY>b.bottom)dialog.close();}});
+ dialog.addEventListener('close',()=>{document.body.classList.remove('photo-viewer-open');returnFocus?.focus({preventScroll:true});});
+ const reader=document.getElementById('reading-select');reader.addEventListener('change',()=>{const r=config.readings[Number(reader.value)];const output=document.getElementById('reading-detail');output.replaceChildren(Object.assign(document.createElement('strong'),{textContent:r.km.toLocaleString('en-IN')+' km'}));document.querySelectorAll('[data-chart-point]').forEach((point,i)=>{point.classList.toggle('is-selected',i===Number(reader.value));point.setAttribute('r',String(i===Number(reader.value)?8:5));});});
+ document.querySelector('.chapter-menu')?.addEventListener('click',event=>{if(event.target.closest('a'))event.currentTarget.open=false;});
+ const printExpanded=[];window.addEventListener('beforeprint',()=>{document.querySelectorAll('.service-invoices,.record-disclosure').forEach(detail=>{if(!detail.open){printExpanded.push(detail);detail.open=true;}});});window.addEventListener('afterprint',()=>{printExpanded.splice(0).forEach(detail=>detail.open=false);});
+ // Keep chapter progress separate from motion so navigation works with reduced motion.
+ const chapterLinks=[...document.querySelectorAll('.chapter-nav a')];const chapterObserver=new IntersectionObserver(entries=>{entries.filter(entry=>entry.isIntersecting).forEach(entry=>{chapterLinks.forEach(a=>{if(a.getAttribute('href')==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});});},{rootMargin:'-15% 0px -55% 0px',threshold:0});document.querySelectorAll('.swift-chapter,.photo-chapter').forEach(section=>chapterObserver.observe(section));
+ if(!window.gsap||!window.ScrollTrigger)return;
+ const gsap=window.gsap;const media=gsap.matchMedia();media.add({reduced:'(prefers-reduced-motion: reduce)',desktop:'(min-width:768px)',mobile:'(max-width:767px)'},context=>{if(context.conditions.reduced||document.documentElement.dataset.motion==='reduced')return;
+  document.querySelectorAll('[data-swift-reveal]').forEach(surface=>gsap.from(surface,{scrollTrigger:{trigger:surface,start:'top 92%',once:true},y:10,opacity:.82,duration:.4,ease:'power2.out',clearProps:'transform,opacity'}));
+  const path=document.querySelector('.swift-mileage-path');if(path){const length=path.getTotalLength();gsap.fromTo(path,{strokeDasharray:length,strokeDashoffset:length},{scrollTrigger:{trigger:path.closest('figure'),start:'top 90%',once:true},strokeDashoffset:0,duration:.65,ease:'power2.out',clearProps:'strokeDasharray,strokeDashoffset'});}
+ });
+})();

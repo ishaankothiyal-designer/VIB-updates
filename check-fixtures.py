@@ -9,8 +9,8 @@ assert len(data['homepageIds'])==5
 for c in cars:
  s=BeautifulSoup((D/f'sample-{c["id"]}.html').read_text(),'html.parser');text=s.get_text(' ',strip=True)
  assert c['name'] in s.h1.text
- assert len(s.select('.photo-open'))==len(c['photos'])==4
- assert len(s.select('.report-section:not(.gaps)'))==8
+ assert len(s.select('.photo-open,.photo-thumb'))==len(c['photos'])==4
+ assert len(s.select('.report-section:not(.gaps),.swift-chapter,.photo-chapter'))==8
  assert not s.select('.vehicle-picker')
  assert c['score']['mode']=='preset-sample' and 0<=c['score']['value']<=100
  assert not any(x in text.lower() for x in ['illustrative','synthetic','sample lender','dummy'])
