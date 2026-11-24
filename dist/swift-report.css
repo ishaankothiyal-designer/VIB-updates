@@ -26,3 +26,42 @@ html{scroll-behavior:auto;scroll-padding-top:92px;overflow-x:clip}body.swift-rep
 body.photo-viewer-open{overflow:hidden}
 
 .photo-fallback{font-size:12px;line-height:1.8;margin-top:14px!important}.report-number{overflow-wrap:anywhere}@media(max-width:620px){.report-number{font-size:11px}}
+/* Recorded journey: exact dated points, a smooth service guide and a separate declaration. */
+#mileage .evidence-surface{padding:0;overflow:hidden;border-radius:12px}
+.mileage-experience{padding:28px 28px 24px;background:linear-gradient(160deg,#f8fafb 0%,#fff 48%)}
+.journey-readout{display:flex;justify-content:space-between;gap:24px;align-items:center;min-height:158px;padding:0 3px 15px}
+.journey-readout>div{min-width:0;flex:1}.journey-readout>div>span{font-size:12px;line-height:1.6;font-weight:600;color:var(--report-text)}
+.journey-readout time{display:block;font-size:12px;line-height:1.6;color:var(--report-muted);margin-top:5px}
+.journey-odometer{display:flex;align-items:baseline;gap:8px;margin-top:12px;min-height:55px;font-variant-numeric:tabular-nums;letter-spacing:-.055em}
+.journey-odometer strong{font:400 47px/1.15 var(--font-body);color:var(--navy)}.journey-odometer>span{font-size:15px;letter-spacing:0;color:var(--report-muted)}
+.journey-readout p{font-size:12px;line-height:1.7;color:var(--report-muted);min-height:21px;margin-top:10px!important}
+.mileage-experience[data-selected-kind=seller] .journey-odometer strong{color:#806a36}
+.odometer-illustration{width:160px;height:125px;object-fit:contain;mix-blend-mode:multiply;flex-shrink:0}
+.journey-plot{position:relative;margin:0 -9px;cursor:crosshair;touch-action:pan-y}
+.journey-plot svg{display:block;width:100%;height:auto;overflow:visible}
+.journey-grid path{stroke:#e5ecf1;stroke-width:1;fill:none}.journey-grid text,.journey-years text{font:11px var(--font-body);fill:#7e91a1;letter-spacing:0}.journey-area{fill:url(#journey-area)}
+.journey-service-line{fill:none;stroke:#476f8f;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.declaration-window{fill:#f5edda;opacity:.55}.journey-dot{fill:#476f8f;stroke:#fff;stroke-width:2}
+.last-reading-guide{stroke:#c6b47f;stroke-width:1;stroke-dasharray:3 5;fill:none}.seller-diamond{fill:#b09249;stroke:#fff;stroke-width:1.8;stroke-linejoin:round}
+.difference-bracket{fill:none;stroke:#b09249;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+#journey-crosshair{stroke:#9eafb9;stroke-width:1;stroke-dasharray:3 5}.journey-cursor{pointer-events:none}#journey-halo{fill:#b69a571a;stroke:#b69a5740;stroke-width:1}#journey-focus{fill:#b09249;stroke:#fff;stroke-width:2}
+.mileage-experience[data-selected-kind=service] #journey-halo{fill:#476f8f18;stroke:#476f8f35}.mileage-experience[data-selected-kind=service] #journey-focus{fill:#476f8f}
+.journey-hit{fill:transparent;stroke:none;cursor:pointer}
+.journey-controls{padding:4px 0 13px}.journey-control-label{display:flex;justify-content:space-between;gap:20px;align-items:center}.journey-control-label label{font-size:12px;color:var(--report-muted);line-height:1.6}.journey-control-label>span{font-size:11px;white-space:nowrap;color:var(--report-muted)}
+.journey-scrubber{display:flex;gap:16px;align-items:center;margin-top:6px}.journey-scrubber button{width:44px;height:44px;min-width:44px;padding:13px;background:var(--report-surface);border:1px solid var(--report-rule);border-radius:50%;color:var(--navy)}
+.journey-scrubber button:disabled{opacity:.32;cursor:default}.journey-scrubber svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.journey-scrubber input{width:100%;min-width:0;height:44px;margin:0;background:transparent;appearance:none;cursor:ew-resize;accent-color:var(--navy)}
+.journey-scrubber input::-webkit-slider-runnable-track{height:3px;background:#d3dfe7;border-radius:8px}.journey-scrubber input::-webkit-slider-thumb{appearance:none;width:17px;height:17px;border:3px solid #fff;border-radius:50%;background:var(--navy);margin-top:-7px;box-shadow:0 1px 7px #0a1f3630}
+.journey-scrubber input::-moz-range-track{height:3px;background:#d3dfe7;border-radius:8px}.journey-scrubber input::-moz-range-thumb{width:12px;height:12px;border:3px solid #fff;border-radius:50%;background:var(--navy)}
+.journey-scrubber input:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:5px}
+.journey-key{display:flex;gap:10px 20px;flex-wrap:wrap;align-items:center;padding-bottom:21px;font-size:10px;color:var(--report-muted);line-height:1.6}.journey-key>span{display:flex;align-items:center;gap:7px}.journey-key i{width:6px;height:6px;display:block;border-radius:50%;background:#476f8f}.journey-key>span:nth-child(2)>i{border-radius:1px;transform:rotate(45deg);background:#b09249}.journey-key .curve-note{margin-left:auto;color:#7e91a1;font-size:10px}
+.journey-comparison{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid var(--report-rule);padding-top:21px;gap:22px}.journey-comparison span{display:block;font-size:10px;line-height:1.7;color:var(--report-muted)}.journey-comparison strong{display:block;font:400 20px/1.4 var(--font-body);margin-top:7px;letter-spacing:-.025em}.journey-comparison small{font-size:11px;font-weight:400;letter-spacing:0}.journey-gap strong{color:#806a36}.journey-caution{font-size:11px;line-height:1.7;color:var(--report-muted);margin-top:18px!important}
+#mileage .service-invoices{margin:0;padding:0 30px 20px;border-top:1px solid var(--report-rule)}
+.visually-hidden{position:absolute!important;clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+@media(min-width:851px) and (min-height:650px){.swift-chapter{align-items:start}.swift-chapter>.chapter-heading{position:sticky;top:98px;align-self:start}}
+@media(max-width:1100px){.mileage-experience{padding:25px 23px 22px}.odometer-illustration{width:125px;height:105px}.journey-odometer strong{font-size:43px}.journey-comparison{gap:15px}.journey-key .curve-note{margin-left:0}}
+@media(max-width:620px){.mileage-experience{padding:22px 18px 20px}.journey-readout{gap:13px;min-height:145px;padding-bottom:10px}.odometer-illustration{width:107px;height:100px}.journey-readout>div>span,.journey-readout time{font-size:11px}.journey-odometer{min-height:47px;margin-top:12px;gap:6px}.journey-odometer strong{font-size:39px}.journey-odometer>span{font-size:12px}.journey-readout p{font-size:11px;min-height:36px;line-height:1.7;max-width:220px;margin-top:7px!important}.journey-plot{margin:2px -8px}.journey-grid text,.journey-years text{font-size:16px}.journey-control-label label{font-size:11px}.journey-control-label>span{font-size:10px}.journey-scrubber{gap:12px}.journey-key{font-size:9px;gap:8px 14px;padding-bottom:18px}.journey-key .curve-note{font-size:9px;flex-basis:100%}.journey-comparison{gap:14px;grid-template-columns:repeat(2,minmax(0,1fr));padding-top:18px}.journey-comparison strong{font-size:21px}.journey-comparison span{font-size:10px}.journey-gap{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:20px;padding-top:14px;border-top:1px solid var(--report-rule)}.journey-gap strong{margin:0;font-size:20px}.journey-caution{font-size:10px;margin-top:12px!important}#mileage .service-invoices{padding:0 18px 18px}}
+@media(max-width:360px){.mileage-experience{padding-inline:16px}.odometer-illustration{width:85px;height:90px}.journey-readout{gap:8px}.journey-odometer strong{font-size:36px}.journey-readout p{font-size:10px}.journey-comparison strong{font-size:19px}}
+@media print{.chapter-heading{position:static!important}.journey-controls{display:none!important}.mileage-experience{padding:20px;background:#fff}.odometer-illustration{width:100px;height:80px}.journey-odometer strong{font-size:32px}.journey-readout{min-height:100px}.journey-comparison{grid-template-columns:1fr 1fr 1fr}.journey-gap{grid-column:auto;display:block;border:0;padding:0}.journey-plot{break-inside:avoid}}
+@media(max-width:620px){.journey-grid text,.journey-years text{font-size:27px}.journey-grid text{dominant-baseline:middle}}
+@media(max-width:620px){.journey-years text:nth-child(3){display:none}}

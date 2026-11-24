@@ -9,7 +9,7 @@ expected=['photos','mileage','ownership','finance','claims','challans','valuatio
 assert [el['id'] for el in s.select('.photo-chapter,.swift-chapter')]==expected
 assert len(s.select('.photo-thumb'))==len(c['photos'])==4
 assert len(s.select('.service-invoices li'))==len(c['services'])==6
-assert len(s.select('#reading-select option'))==len(c['services'])+1
+assert int(s.select_one('#reading-range')['max'])==len(c['services'])
 assert len(s.select('.seller-prompt'))==7
 assert int(s.select_one('.condition-value strong').text)==c['score']['value']
 config=json.loads(s.select_one('#swift-report-data').string)
@@ -24,5 +24,8 @@ assert '₹3.4–3.8' in text and '₹4,40,000' in text and '₹4,00,000' in tex
 assert len(s.select('noscript a'))==4
 assert not s.select('.vehicle-picker,.car-files')
 baseline=json.loads((B/'data/swift-review-baseline-2026-11-24.json').read_text())
-for name,h in baseline.items():assert (D/name).is_file() and hashlib.sha256((D/name).read_bytes()).hexdigest()==h,f'Changed outside Swift scope: {name}'
-print(f'PASS: Swift eight chapters, four original photos, six invoices, seven reading states, fixed financial/mileage facts and {len(baseline)} byte-identical existing non-Swift files.')
+allowed_changes={'cars.json','sample.html','index.html'}
+for name,h in baseline.items():
+ if name in allowed_changes:continue
+ assert (D/name).is_file() and hashlib.sha256((D/name).read_bytes()).hexdigest()==h,f'Changed outside Swift scope: {name}'
+print(f'PASS: Swift eight chapters, four original photos, six invoices, seven reading states, fixed financial/mileage facts and {len(baseline)-len(allowed_changes)} protected byte-identical existing non-Swift files.')

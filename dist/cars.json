@@ -34,7 +34,7 @@
         {
           "id": "swift-svc-1",
           "date": "2021-07-08",
-          "km": 12000,
+          "km": 9800,
           "work": "Engine oil, oil filter and general checks",
           "amount": 4400,
           "source": "Service invoice",
@@ -43,7 +43,7 @@
         {
           "id": "swift-svc-2",
           "date": "2022-07-08",
-          "km": 24000,
+          "km": 21750,
           "work": "Air filter, brake cleaning and fluid checks",
           "amount": 5050,
           "source": "Service invoice",
@@ -52,7 +52,7 @@
         {
           "id": "swift-svc-3",
           "date": "2023-07-08",
-          "km": 36000,
+          "km": 29400,
           "work": "Engine oil, oil filter and general checks",
           "amount": 5700,
           "source": "Service invoice",
@@ -61,7 +61,7 @@
         {
           "id": "swift-svc-4",
           "date": "2024-07-08",
-          "km": 48000,
+          "km": 46300,
           "work": "Air filter, brake cleaning and fluid checks",
           "amount": 6350,
           "source": "Service invoice",
@@ -70,7 +70,7 @@
         {
           "id": "swift-svc-5",
           "date": "2025-07-08",
-          "km": 60000,
+          "km": 58750,
           "work": "Engine oil, oil filter and general checks",
           "amount": 7000,
           "source": "Service invoice",

@@ -26,7 +26,7 @@ for path,page in pages.items():
   if u.fragment:assert u.fragment in pages.get(dst,Page(dst)).ids,f'Missing fragment: {ref}'
 for path in DIST.glob('*.css'):
  for value in re.findall(r'url\([\"\']?([^\)\"\']+)',path.read_text()):
-  if not value.startswith(('data:','http:','https:')):assert (DIST/value).is_file(),f'Missing CSS asset: {value}'
+  if not value.startswith(('data:','http:','https:','#')):assert (DIST/value).is_file(),f'Missing CSS asset: {value}'
 for _,_,image,_ in json.loads((DIST/'guides.json').read_text()).values():assert (DIST/'assets'/image).is_file(),image
 preserved=json.loads((BASE/'v4-baseline-hashes.json').read_text())
 actual={str(p.relative_to(ROOT/'design/website-v4/dist')):hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'design/website-v4/dist').rglob('*') if p.is_file()}

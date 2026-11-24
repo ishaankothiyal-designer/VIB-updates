@@ -1,0 +1,8 @@
+{
+  "job_id": "7b0a880d-f82d-4661-b3c5-11ce767b3814",
+  "model": "gpt_image_2_6",
+  "local": "dist/assets/odometer-study.webp",
+  "sha256": "f44cf5d1590084e6bd19c4761fb606b96c396e8459dd01c6d2aca7ca35bdb48f",
+  "purpose": "Supporting instrument illustration. Native SVG/HTML owns all chart data.",
+  "reference_uploaded": false
+}

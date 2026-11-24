@@ -15,7 +15,25 @@
  dialog.addEventListener('keydown',event=>{if(event.key==='Tab'){const first=dialog.querySelector('.viewer-close'),last=dialog.querySelector('.viewer-next');if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}}if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();selectPhoto(selected+(event.key==='ArrowRight'?1:-1));}});
  dialog.addEventListener('click',event=>{if(event.target===dialog){const b=dialog.getBoundingClientRect();if(event.clientX<b.left||event.clientX>b.right||event.clientY<b.top||event.clientY>b.bottom)dialog.close();}});
  dialog.addEventListener('close',()=>{document.body.classList.remove('photo-viewer-open');returnFocus?.focus({preventScroll:true});});
- const reader=document.getElementById('reading-select');reader.addEventListener('change',()=>{const r=config.readings[Number(reader.value)];const output=document.getElementById('reading-detail');output.replaceChildren(Object.assign(document.createElement('strong'),{textContent:r.km.toLocaleString('en-IN')+' km'}));document.querySelectorAll('[data-chart-point]').forEach((point,i)=>{point.classList.toggle('is-selected',i===Number(reader.value));point.setAttribute('r',String(i===Number(reader.value)?8:5));});});
+ const range=document.getElementById('reading-range'),experience=document.querySelector('.mileage-experience'),plot=document.querySelector('.journey-plot');let readingIndex=config.readings.length-1;
+ const number=document.getElementById('journey-km');
+ function selectReading(index,announce=false){
+  index=Math.max(0,Math.min(config.readings.length-1,index));const changed=index!==readingIndex;readingIndex=index;const r=config.readings[index],last=config.readings[config.readings.length-2];const seller=index===config.readings.length-1;
+  range.value=String(index);experience.dataset.selectedKind=seller?'seller':'service';
+  document.getElementById('journey-source').textContent=r.source;const when=document.getElementById('journey-date');when.textContent=r.displayDate;when.dateTime=r.date;
+  number.textContent=r.km.toLocaleString('en-IN');document.getElementById('journey-position').textContent=(index+1)+' of '+config.readings.length;
+  document.getElementById('journey-insight').textContent=seller?(last.km-r.km).toLocaleString('en-IN')+' km below the last service record':index===0?'First available service invoice':(r.km-config.readings[index-1].km).toLocaleString('en-IN')+' km since the previous invoice';
+  const spoken=r.displayDate+', '+r.source+', '+r.km.toLocaleString('en-IN')+' kilometres';range.setAttribute('aria-valuetext',spoken);if(announce)document.getElementById('mileage-announcement').textContent=spoken;
+  document.getElementById('reading-previous').disabled=index===0;document.getElementById('reading-next').disabled=index===config.readings.length-1;
+  const line=document.getElementById('journey-crosshair'),halo=document.getElementById('journey-halo'),focus=document.getElementById('journey-focus');
+  const smooth=window.gsap&&document.documentElement.dataset.motion!=='reduced';
+  if(smooth){window.gsap.to(line,{attr:{x1:r.x,x2:r.x},duration:.22,ease:'power2.out',overwrite:true});window.gsap.to([halo,focus],{attr:{cx:r.x,cy:r.y},duration:.22,ease:'power2.out',overwrite:true});if(changed)window.gsap.fromTo(number,{y:4,opacity:.7},{y:0,opacity:1,duration:.22,ease:'power2.out',clearProps:'transform,opacity',overwrite:true});}
+  else{window.gsap?.killTweensOf([line,halo,focus,number]);number.style.removeProperty('transform');number.style.removeProperty('opacity');line.setAttribute('x1',r.x);line.setAttribute('x2',r.x);[halo,focus].forEach(point=>{point.setAttribute('cx',r.x);point.setAttribute('cy',r.y);});}
+ }
+ range.addEventListener('input',()=>selectReading(Number(range.value),true));document.getElementById('reading-previous').addEventListener('click',()=>selectReading(readingIndex-1,true));document.getElementById('reading-next').addEventListener('click',()=>selectReading(readingIndex+1,true));
+ const nearest=event=>{const box=plot.querySelector('svg').getBoundingClientRect();const x=(event.clientX-box.left)/box.width*720;let best=0;config.readings.forEach((r,i)=>{if(Math.abs(r.x-x)<Math.abs(config.readings[best].x-x))best=i;});return best;};
+ plot.addEventListener('pointermove',event=>{if(event.pointerType==='mouse')selectReading(nearest(event));});plot.addEventListener('click',event=>selectReading(nearest(event),true));selectReading(readingIndex);
+ new MutationObserver(()=>selectReading(readingIndex)).observe(document.documentElement,{attributes:true,attributeFilter:['data-motion']});
  document.querySelector('.chapter-menu')?.addEventListener('click',event=>{if(event.target.closest('a'))event.currentTarget.open=false;});
  const printExpanded=[];window.addEventListener('beforeprint',()=>{document.querySelectorAll('.service-invoices,.record-disclosure').forEach(detail=>{if(!detail.open){printExpanded.push(detail);detail.open=true;}});});window.addEventListener('afterprint',()=>{printExpanded.splice(0).forEach(detail=>detail.open=false);});
  // Keep chapter progress separate from motion so navigation works with reduced motion.

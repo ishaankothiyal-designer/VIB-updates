@@ -1,0 +1,20 @@
+[
+  {
+    "name": "creta-archive",
+    "job_id": "c837d75d-a029-4c1d-88c0-b0e3ff5031ca",
+    "model": "gpt_image_2_6",
+    "local": "dist/assets/creta-archive.webp",
+    "sha256": "6a78ecaf4c3e59770b1920723d68d5b768a522653b8385d3261dc6249e712c0d",
+    "purpose": "Supporting illustration for existing mock vehicle case; not photographic evidence",
+    "reference_uploaded": false
+  },
+  {
+    "name": "brezza-archive",
+    "job_id": "8a4848bf-86e8-43ab-a114-8ee1e92b818b",
+    "model": "gpt_image_2_6",
+    "local": "dist/assets/brezza-archive.webp",
+    "sha256": "c4773d6f953190c54e50a20fa157d85409dbc14004cb1fbd5fdc8e9fe0cb0fb0",
+    "purpose": "Supporting illustration for existing mock vehicle case; not photographic evidence",
+    "reference_uploaded": false
+  }
+]
