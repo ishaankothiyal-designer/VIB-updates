@@ -23,3 +23,7 @@ Bounded sample-report, guide and motion agents owned separate files. Independent
 Motion is progressive. Isolated logic checks cover saved/manual/native/denied-storage/no-GSAP behavior. Browser verified manual reduction and inline-style cleanup; native OS preference change and library failure not browser-emulated. No physical-device,screen-reader,zoom or human study claim.
 
 Published commit/deployment/live evidence is recorded in the parent knowledge/website-v5-2026-11-24.md after release. QA screenshots/reports are ignored source-local evidence.
+
+## Skill integration follow-up
+
+Added one Higgsfield records + inspection illustration, with source provenance and responsive landscape placement. Affected guide checked at320/375/390/414/768/1440: loaded, no horizontal overflow. Homepage guide → inspection → sample path passed. Independent source review found no further high-impact clarity/copy issue. Full skill traceability and unavailable workflows: skills-integration.md. Six-route checker and27V4 hashes pass. No new competitor or participant research claimed.

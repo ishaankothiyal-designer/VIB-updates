@@ -1,0 +1,16 @@
+{
+  "records-inspection.webp": {
+    "provider": "Higgsfield",
+    "model": "gpt_image_2_6",
+    "job_id": "3d448e5a-d6b1-4ec3-9984-655dcac766ff",
+    "date": "2026-11-24",
+    "source_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3EUMy908K1syOlrGcNJfJc53bTl/hf_20261124_163606_3d448e5a-d6b1-4ec3-9984-655dcac766ff.png",
+    "brief": "Records and physical inspection together; navy fine outlines, pale blue modeling, restrained ochre; blank paper, no facts or certification marks. Text-only generation informed by inspected original d1a82.webp; original was not uploaded as image reference.",
+    "optimization": "Original PNG converted to WebP quality88; no visual edits",
+    "usage": [
+      "Homepage inspection buyer-guide link",
+      "Inspection guide hero"
+    ],
+    "review": "Visually compared with original VIB blue illustration family; responsive guide rendering checked at320/375/390/414/768/1440. Native evidence remains HTML."
+  }
+}
