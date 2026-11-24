@@ -1,0 +1,20 @@
+[
+  {
+    "name": "swift-archive",
+    "job_id": "f2fe036c-5d6b-4848-b305-333fe1240e7c",
+    "model": "gpt_image_2_6",
+    "local": "dist/assets/swift-archive.webp",
+    "sha256": "8dae925014df91ae27c4fc872ace0cf377cee3a18dd8dc9da76ffeb5282150c6",
+    "usage": "Editorial illustration, not vehicle evidence",
+    "reference_image_uploaded": false
+  },
+  {
+    "name": "report-folio",
+    "job_id": "05ab22f1-c269-4333-b14c-76a555a3eaec",
+    "model": "gpt_image_2_6",
+    "local": "dist/assets/report-folio.webp",
+    "sha256": "7450411f9632d14c2002339b24c982c7c538ac4428eb5a2eb3c2edb884a03b50",
+    "usage": "Editorial illustration, not vehicle evidence",
+    "reference_image_uploaded": false
+  }
+]

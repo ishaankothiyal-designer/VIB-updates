@@ -64,6 +64,7 @@
     reduced: '(prefers-reduced-motion: reduce)'
   }, context => {
     if (context.conditions.reduced || userReduced) return;
+    const cleanupStories = window.VIBScrollStories?.init(gsap, ScrollTrigger, context);
     const distance = context.conditions.desktop ? 12 : 7;
     const frames = { report: 0, process: 0 };
     const pending = { report: null, process: null };
@@ -154,6 +155,7 @@
     document.addEventListener('vib:report-change', onReportChange);
     document.addEventListener('vib:process-change', onProcessChange);
     return () => {
+      cleanupStories?.();
       Object.values(frames).forEach(cancelAnimationFrame);
       document.removeEventListener('vib:report-change', onReportChange);
       document.removeEventListener('vib:process-change', onProcessChange);

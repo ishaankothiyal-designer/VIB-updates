@@ -22,3 +22,8 @@ V5 combines the applicable skill responsibilities from the creative assessment. 
 Need: original V5 had no bespoke A2 artwork despite explicit tool request. Added one scene connecting documentary records with physical inspection. Preserved the A2 hero and native evidence. New illustration appears only where it communicates the guide topic; no generated numbers, UI text, authority seal or video added.
 
 Changed dist/index.html, dist/guide-inspection.html, dist/guide.css; added one WebP and provenance. Guide hero uses a landscape grid on desktop, intact centered scene on mobile. Loaded image and no horizontal overflow at320/375/390/414/768/1440. Actual homepage guide link → inspection article → sample report path passed. Resource/anchor/ARIA checker passes six routes and27V4 hashes; JS syntax checks pass. Screenshots qa/skills-inspection-1440.jpg and390.jpg are local source captures, not hosted authenticated captures. Hosted visual access retains the previously recorded private sign-in limitation.
+
+
+## 24 November — minimal card refinement
+
+User annotated ten sections. Current implementation combines the project foundation, UX writing, Higgsfield illustration, accessible GSAP scroll stacks, responsive checks and Sites publication. See `minimal-cards-review-2026-11-24.md` for bounded skill use, source references and validation; complete Hallmark themed workflow is not claimed. User-visible car catalogue is superseded by background sample rotation.

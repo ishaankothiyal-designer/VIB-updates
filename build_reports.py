@@ -19,12 +19,10 @@ def source(label):return f'<div class="source-line">{label} · record set dated 
 def nextstep(title,question,copy,guide=None):return f'<aside class="report-next-step"><span>What to ask next</span><h3>{title}</h3><p class="seller-question">“{question}”</p><p>{copy}</p>'+ (f'<a class="text-link" href="guide-{guide}.html">Read the {guide} guide</a>' if guide else '')+'</aside>'
 def sethtml(el,html):el.clear();el.append(soup(html))
 def chapter(id,num,label,title,copy,body):return soup(f'<section class="report-section" id="{id}"><div class="chapter-intro"><p class="eyebrow"><span class="chapter-number" aria-hidden="true">{num}</span>{label}</p><h2>{title}</h2><p>{copy}</p></div><div class="report-section-body">{body}</div></section>').section
-options=''.join(f'<option value="sample-{c["id"]}.html">{c["year"]} {e(c["name"])} · {e(c["variant"])}</option>' for c in cars)
 for c in cars:
  s=soup((BASE/'data/report-template-original.html').read_text());s.title.string=f'VIB — {c["year"]} {c["name"]} report';
  s.head.append(soup('<link href="vehicles.css" rel="stylesheet"><script src="vehicles.js" defer></script>'))
  sethtml(s.select_one('.sample-banner'),'<p>Vehicle history report · 24 Nov 2026</p><button class="print-button" type="button">Print report</button>')
- selector=soup(f'<form class="vehicle-picker"><label for="report-vehicle">Explore another car</label><select id="report-vehicle" name="vehicle">{options}</select><button type="submit">Open report</button></form>');selector.select_one(f'option[value="sample-{c["id"]}.html"]')['selected']='';s.select_one('.sample-top').insert_after(selector)
  top=s.select_one('.sample-top');sethtml(top,f'<div><div class="mini-identity"><span class="mini-brand">VIB <small>Vehicle history report</small></span></div><p class="sample-label">Vehicle record</p><h1>{e(c["name"])}</h1><p class="variant-name">{e(c["variant"])}</p><p class="mini-sub">{c["year"]} · {e(c["fuel"])} · {e(c["transmission"])} · {c["registration"]}</p><p>24 Nov 2026 · {c["reportId"]}</p></div><div class="identity-photo"><a href="#photos"><img src="{c["photos"][0]["src"]}" alt="{e(c["name"])} — {e(c["photos"][0]["view"])}" width="640" height="420"></a><p>Reference vehicle photograph · {len(c["photos"])} photos in this file</p></div>')
  sethtml(s.select_one('.coverage-preview'),f'<h2>{c["headline"]}</h2><p>{len(c["services"])} service records · {c["owners"]} owner'+('s' if c['owners']>1 else '')+f' · {km(c["declaredKm"])} km declared. Read the dated evidence, then check the car and original documents.</p><a href="#coverage-gaps">See record coverage</a>')
  delta=c['services'][-1]['km']-c['declaredKm'];mismatch=delta>0;last=c['services'][-1]
@@ -71,36 +69,22 @@ for c in cars:
  sethtml(s.select_one('.report-jump summary'),'Report sections<span>8 sections</span>')
  for i,section in enumerate(s.select('.report-section:not(.gaps)'),1):section.select_one('.chapter-number').string=f'{i:02}'
  sethtml(s.select_one('#coverage-gaps'),'<div><h2>Know what is still missing.</h2><p>Read the available records with the car, its documents and a physical inspection.</p></div><div>'+rows([('Condition score','Preset sample · no production calculation'),('Theft / court / FIR / recalls','Coverage unavailable'),('Loan balance and repayment','Unavailable'),('Accident severity and current condition','Not assessed'),('Factory equipment and peer ranking','Not verified')])+ '<p class="photo-provenance">Sample vehicle histories, amounts and outcomes are fictional. Photos show a model-matched reference car from a CARS24 listing; they do not verify these histories.</p></div>')
- sethtml(s.select_one('.report-end'),'<p>End of report · 24 Nov 2026</p><h2>Ask better questions. Then inspect the car.</h2><a class="button" href="index.html#car-files">Explore the car files</a>')
+ sethtml(s.select_one('.report-end'),'<p>End of report · 24 Nov 2026</p><h2>Ask better questions. Then inspect the car.</h2><a class="button" href="index.html">Back to VIB</a>')
  dialog=soup('<dialog class="photo-dialog" aria-label="Vehicle photograph"><button type="button" class="photo-close">Close photo</button><img alt="" src="'+c['photos'][0]['src']+'"><p></p></dialog>');s.body.append(dialog)
  (D/f'sample-{c["id"]}.html').write_text(str(s))
  if c['id']=='swift':(D/'sample.html').write_text(str(s))
-# Preserve the chosen homepage narrative and replace repeated demo framing with specific copy.
-s=soup((BASE/'data/home-template-original.html').read_text());s.head.append(soup('<link href="vehicles.css" rel="stylesheet"><script src="vehicles.js" defer></script>'))
-replacements={'Interactive sample. Live lookup is not available.':'Explore ten car histories. Start with a sample report.','ILLUSTRATIVE VEHICLE REPORT':'VEHICLE HISTORY REPORT','ILLUSTRATIVE VEHICLE HISTORY':'VEHICLE HISTORY','Illustrative vehicle report':'Vehicle history report','Illustrative vehicle history':'Vehicle history','Maruti Suzuki Swift VXi':'Maruti Suzuki Swift Lxi','Synthetic sample · 22 Nov 2026':'Record date · 24 Nov 2026','Illustrative Swift example':'Swift · mileage records','ILLUSTRATIVE SWIFT EXAMPLE':'SWIFT · MILEAGE RECORDS','This example uses synthetic records and amounts. Available information varies by vehicle and source.':'A lower reading needs an explanation. Start with the original documents.','Inside the illustrative 2020 Swift report':'Inside the 2020 Swift report','An illustrative ₹3.4–3.8 lakh range sits beside previous asking prices. These are sample estimates and asking prices, not completed-sale prices or a forecast.':'A ₹3.4–3.8 lakh reference range sits beside previous asking prices. Use it to start the price conversation, then consider the records and today’s condition.','Vehicle, records and amounts are synthetic.':'Read each record with its date and source.','The sample’s 64/100 is an illustrative design value, not a calculated result. VIB’s condition-score methodology describes a relative prediction of physical condition. It is not a guarantee or a summary of every legal and financial record.':'A condition score describes predicted physical condition. Read it with the supporting records and an inspection. These sample scores are preset for the report preview; legal and financial findings are shown separately.','What does the sample score mean?':'How should I read a condition score?','Explore the findings, dated entries and follow-up questions in the illustrative Swift report.':'Open a car’s file. Follow its dated records, see its photos and take a clearer question to the seller.','Interactive sample. Live vehicle lookup is not available.':'Choose a car from the report collection.','An illustrative':'A reference'}
-for node in list(s.find_all(string=True)):
- if node.parent.name in ['script','style']:continue
- t=str(node)
- for a,b in replacements.items():t=t.replace(a,b)
- if t!=str(node):node.replace_with(t)
-# Match the homepage's record fields to the same Swift fixture.
-for node in list(s.find_all(string=True)):
- if '7 Jul 2035' in str(node):node.replace_with(str(node).replace('7 Jul 2035','7 Jul 2035'))
-first=cars[0]
-hero=soup(f'<a class="hero-car-photo" href="sample.html#photos"><img src="{first["photos"][0]["src"]}" width="640" height="420" alt="2020 Maruti Suzuki Swift reference car"><span>See the car’s photos</span></a>');s.select_one('.main-sheet .car-meta').insert_after(hero)
-cards=''
-for i,c in enumerate(cars):
- cards+=f'<a class="car-file" href="sample-{c["id"]}.html" data-file-group="{i//5}"'+(' hidden' if i>=5 else '')+f'><img src="{c["photos"][0]["src"]}" width="600" height="400" alt="{e(c["name"])} reference car" loading="lazy"><div><span>{c["year"]} · {e(c["fuel"])} · {e(c["transmission"])}</span><h3>{e(c["name"])}</h3><p class="file-variant">{e(c["variant"])}</p><p>{c["headline"]}</p><div class="car-file-meta"><span>{km(c["declaredKm"])} km declared</span><span>{len(c["photos"])} photos</span></div><b>Read this car’s report</b></div></a>'
-collection=soup(f'<section class="car-files" id="car-files"><div class="wrap"><div class="car-files-heading"><div><p class="eyebrow">THE CAR FILES</p><h2>Different cars.<br>Different stories.</h2></div><div><p>Follow the photos, dated records and questions behind each car.</p><p class="collection-note">Sample histories with reference vehicle photos.</p><button class="refresh-files" type="button">Show five more cars</button><p class="file-page-state" aria-live="polite">Showing cars 1–5 of 10</p></div></div><div class="car-file-grid">{cards}</div></div></section>');s.select_one('#evidence').insert_after(collection)
-sethtml(s.select_one('.paper-top>span'),'VEHICLE<br>HISTORY REPORT')
-sethtml(s.select_one('.main-sheet h2'),'Maruti Suzuki<br>Swift LXI')
-for el in s.select('[aria-label]'):
- el['aria-label']=re.sub('Illustrative report','Vehicle history report',el['aria-label'],flags=re.I)
-for node in list(s.find_all(string=True)):
- if node.parent.name not in ['script','style'] and re.search('illustrative',str(node),re.I):node.replace_with(re.sub('illustrative','',str(node),flags=re.I))
-s.select_one('meta[name=description]')['content']='Follow a used car’s available records. Explore ten car histories, vehicle photographs and the questions to ask before buying.'
-(D/'index.html').write_text(str(s))
+# Homepage has its own bounded presentation builder.
+from build_home import build_home
+build_home()
 # Existing static reading routes retain their source structure.
 for file in [D/'guide.html',*D.glob('guide-*.html')]:
- t=file.read_text();t=re.sub('illustrative','sample',t,flags=re.I).replace('sample sample. Records and amounts are synthetic.','Read the dated records, then check the original documents.').replace('View sample lender entry','Review the lender entry');file.write_text(t)
-print('Built ten vehicle reports, default report and five-at-a-time homepage collection.')
+ t=file.read_text();t=re.sub('illustrative','sample',t,flags=re.I).replace('sample sample. Records and amounts are synthetic.','Read the dated records, then check the original documents.').replace('View sample lender entry','Review the lender entry').replace('sample.html#finance','sample-swift.html#finance').replace('sample.html#mileage','sample-swift.html#mileage');file.write_text(t)
+print('Built ten background vehicle reports, sample entry point and minimal scroll-story homepage.')
+
+ids=[c['id'] for c in cars]
+router=(BASE/'data/sample-router-template.js').read_text().replace('__VEHICLE_IDS__',json.dumps(ids))
+(D/'sample-router.js').write_text(router)
+for page in D.glob('*.html'):
+ document=soup(page.read_text())
+ if not document.select_one('script[src="sample-router.js"]'):document.head.insert(0,soup('<script src="sample-router.js"></script>'))
+ page.write_text(str(document))
