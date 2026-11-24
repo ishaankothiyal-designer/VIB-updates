@@ -92,3 +92,7 @@ for page in D.glob('*.html'):
 # Swift is a focused review treatment; other report designs remain on their current builder.
 from build_swift_report import build_swift_report
 build_swift_report()
+
+# Issue-led reviews share the approved Swift report system.
+from build_issue_reports import build_issue_reports
+build_issue_reports()

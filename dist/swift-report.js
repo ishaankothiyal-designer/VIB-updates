@@ -1,10 +1,10 @@
-/* Swift-only gallery, reading explorer and preference-aware evidence arrival. */
+/* Shared story-report gallery, reading explorer and preference-aware evidence arrival. */
 (()=>{
  'use strict';const config=JSON.parse(document.getElementById('swift-report-data').textContent);
  const photos=config.photos;let selected=0;let returnFocus=null;
  const main=document.getElementById('selected-photo'),caption=document.getElementById('selected-photo-caption'),count=document.getElementById('selected-photo-count'),open=document.querySelector('.gallery-open'),thumbs=[...document.querySelectorAll('.photo-thumb')];
  const dialog=document.getElementById('photo-viewer'),viewer=document.getElementById('viewer-photo');
- const friendly=photo=>'Maruti Suzuki Swift LXI — '+photo.label.toLowerCase()+' view';
+ const friendly=photo=>(config.vehicleName||'Maruti Suzuki Swift LXI')+' — '+photo.label.toLowerCase()+' view';
  function selectPhoto(index){selected=(index+photos.length)%photos.length;const photo=photos[selected];main.src=photo.src;main.alt=friendly(photo);caption.textContent=photo.label;count.textContent=(selected+1)+' of '+photos.length;open.setAttribute('aria-label','Open '+photo.label.toLowerCase()+' photo in full screen');thumbs.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===selected)));if(dialog.open)updateViewer();}
  function updateViewer(){const photo=photos[selected];viewer.src=photo.src;viewer.alt=friendly(photo);document.getElementById('viewer-caption').textContent=photo.label;document.getElementById('viewer-position').textContent=(selected+1)+' of '+photos.length;}
  thumbs.forEach((button,i)=>{button.addEventListener('click',()=>selectPhoto(i));button.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(i+1)%photos.length;else if(event.key==='ArrowLeft')next=(i+photos.length-1)%photos.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=photos.length-1;if(next!==undefined){event.preventDefault();selectPhoto(next);thumbs[next].focus();}});});
@@ -22,7 +22,7 @@
   range.value=String(index);experience.dataset.selectedKind=seller?'seller':'service';
   document.getElementById('journey-source').textContent=r.source;const when=document.getElementById('journey-date');when.textContent=r.displayDate;when.dateTime=r.date;
   number.textContent=r.km.toLocaleString('en-IN');document.getElementById('journey-position').textContent=(index+1)+' of '+config.readings.length;
-  document.getElementById('journey-insight').textContent=seller?(last.km-r.km).toLocaleString('en-IN')+' km below the last service record':index===0?'First available service invoice':(r.km-config.readings[index-1].km).toLocaleString('en-IN')+' km since the previous invoice';
+  document.getElementById('journey-insight').textContent=seller?Math.abs(last.km-r.km).toLocaleString('en-IN')+' km '+(last.km>r.km?'below':'above')+' the last service record':index===0?'First available service invoice':(r.km-config.readings[index-1].km).toLocaleString('en-IN')+' km since the previous invoice';
   const spoken=r.displayDate+', '+r.source+', '+r.km.toLocaleString('en-IN')+' kilometres';range.setAttribute('aria-valuetext',spoken);if(announce)document.getElementById('mileage-announcement').textContent=spoken;
   document.getElementById('reading-previous').disabled=index===0;document.getElementById('reading-next').disabled=index===config.readings.length-1;
   const line=document.getElementById('journey-crosshair'),halo=document.getElementById('journey-halo'),focus=document.getElementById('journey-focus');

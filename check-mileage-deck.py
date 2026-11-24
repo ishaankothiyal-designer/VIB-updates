@@ -24,11 +24,11 @@ assert len(s.select('.journey-dot'))==6 and s.select_one('.seller-diamond')
 assert s.select_one('#reading-range')['max']=='6'
 for r in c['services']:assert f'{r["km"]:,} km' in s.get_text(' ',strip=True)
 home=BeautifulSoup((D/'index.html').read_text(),'html.parser');cases=json.loads(home.select_one('#hero-case-data').string);assert [r['id'] for r in cases]==['swift','creta','brezza']
-assert len(home.select('.case-card'))==len(home.select('.case-selector'))==3
+assert len(home.select('.case-card'))==3 and not home.select('.case-selector')
 before=BeautifulSoup(subprocess.check_output(['git','show','418bc4b89ec3b6c0db1e3385f337cb01e12ec2be:dist/index.html'],cwd=B),'html.parser')
 for selector in ['#evidence','#report-contents','#process','#faqs','#guides','.closing-file','.contact-strip','.site-header','.site-footer']:
  assert str(home.select_one(selector))==str(before.select_one(selector)),f'Outside hero changed: {selector}'
-protected=json.loads((B/'data/mileage-scope-baseline-2026-11-24.json').read_text());intentional={'index.html'}
+protected=json.loads((B/'data/mileage-scope-baseline-2026-11-24.json').read_text());intentional={'index.html','sample-creta.html','sample-brezza.html'}
 for file,h in protected.items():
  if file in intentional:continue
  assert hashlib.sha256((D/file).read_bytes()).hexdigest()==h,file
