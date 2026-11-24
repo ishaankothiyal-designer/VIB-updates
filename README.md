@@ -17,3 +17,7 @@ A2's layered report hero and one consequential mileage finding lead into dated e
 Synthetic2020Swift records, sample amount/date facts and illustrative64score retained. No live lookup, authentication, payments, production scoring, provider connection or Figma changes. Physicaldevice,screenreader,200%zoom and participant testing not performed. Native OS preference switch was source/isolatedlogic checked, not emulated in browser.
 
 Skill traceability and the24November Higgsfield follow-up: `skills-integration.md` and `asset-provenance.json`. Bespoke records/inspection illustration follows the original blue family on the inspection guide and homepage reading-room link. Hallmark full workflow and a fresh motion.so study are not claimed.
+
+## Ten-car report collection — 24 November
+
+Current data is `dist/cars.json`. Rebuild with `python3 build_reports.py`; validate with `python3 check-fixtures.py` and `python3 check.py`. Ten static report routes plus default Swift; homepage browses five at a time. Forty model-matched listing reference photographs, native photo dialog, consistent chart/table/timeline records. Scores are preset sample values, not production calculations. Detailed source, copy, refresh and QA record: `car-files-update-2026-11-24.md`.
