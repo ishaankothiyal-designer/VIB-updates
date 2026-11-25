@@ -1,0 +1,208 @@
+[
+  {
+    "car": "baleno",
+    "width": 390,
+    "galleryAlt": "Maruti Suzuki Baleno Alpha Petrol 1.2 — front left view",
+    "restored": true,
+    "chart": "43,800",
+    "broken": 0,
+    "chapterTitle": "Five invoices. Read them in sequence.",
+    "overflow": false,
+    "visibleDates": [
+      "2022",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "city",
+    "width": 390,
+    "galleryAlt": "Honda City 1.5L i-VTEC VX — front left view",
+    "restored": true,
+    "chart": "55,900",
+    "broken": 0,
+    "chapterTitle": "A second owner. The same details to verify.",
+    "overflow": false,
+    "visibleDates": [
+      "2022",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "nexon",
+    "width": 390,
+    "galleryAlt": "Tata Nexon Creative Plus S 1.2 Revotron 6 MT — front left view",
+    "restored": true,
+    "chart": "13,500",
+    "broken": 0,
+    "chapterTitle": "A short history. A lender entry to follow up.",
+    "overflow": false,
+    "visibleDates": [
+      "2025",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "i20",
+    "width": 390,
+    "galleryAlt": "Hyundai Elite i20 Asta 1.2 — front left view",
+    "restored": true,
+    "chart": "81,500",
+    "broken": 0,
+    "chapterTitle": "The service trail stops in July 2024.",
+    "overflow": false,
+    "visibleDates": [
+      "2021",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "venue",
+    "width": 390,
+    "galleryAlt": "Hyundai Venue SX 1.0 Turbo iMT — front left view",
+    "restored": true,
+    "chart": "47,200",
+    "broken": 0,
+    "chapterTitle": "A closure document. An entry still active.",
+    "overflow": false,
+    "visibleDates": [
+      "2021",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "tiago",
+    "width": 390,
+    "galleryAlt": "Tata Tiago XT Petrol — front left view",
+    "restored": true,
+    "chart": "40,500",
+    "broken": 0,
+    "chapterTitle": "Put the asking price beside the records.",
+    "overflow": false,
+    "visibleDates": [
+      "2021",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "amaze",
+    "width": 390,
+    "galleryAlt": "Honda Amaze 1.2L i-VTEC VX — front left view",
+    "restored": true,
+    "chart": "48,800",
+    "broken": 0,
+    "chapterTitle": "Check the owner. Follow up on the lender.",
+    "overflow": false,
+    "visibleDates": [
+      "2022",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "baleno",
+    "width": 1440,
+    "galleryAlt": "Maruti Suzuki Baleno Alpha Petrol 1.2 — front left view",
+    "restored": true,
+    "chart": "43,800",
+    "broken": 0,
+    "chapterTitle": "Five invoices. Read them in sequence.",
+    "overflow": false,
+    "visibleDates": [
+      "2022",
+      "2024",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "city",
+    "width": 1440,
+    "galleryAlt": "Honda City 1.5L i-VTEC VX — front left view",
+    "restored": true,
+    "chart": "55,900",
+    "broken": 0,
+    "chapterTitle": "A second owner. The same details to verify.",
+    "overflow": false,
+    "visibleDates": [
+      "2022",
+      "2024",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "nexon",
+    "width": 1440,
+    "galleryAlt": "Tata Nexon Creative Plus S 1.2 Revotron 6 MT — front left view",
+    "restored": true,
+    "chart": "13,500",
+    "broken": 0,
+    "chapterTitle": "A short history. A lender entry to follow up.",
+    "overflow": false,
+    "visibleDates": [
+      "2025",
+      "2026",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "i20",
+    "width": 1440,
+    "galleryAlt": "Hyundai Elite i20 Asta 1.2 — front left view",
+    "restored": true,
+    "chart": "81,500",
+    "broken": 0,
+    "chapterTitle": "The service trail stops in July 2024.",
+    "overflow": false,
+    "visibleDates": [
+      "2021",
+      "2023",
+      "2025",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "venue",
+    "width": 1440,
+    "galleryAlt": "Hyundai Venue SX 1.0 Turbo iMT — front left view",
+    "restored": true,
+    "chart": "47,200",
+    "broken": 0,
+    "chapterTitle": "A closure document. An entry still active.",
+    "overflow": false,
+    "visibleDates": [
+      "2021",
+      "2023",
+      "2025",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "tiago",
+    "width": 1440,
+    "galleryAlt": "Tata Tiago XT Petrol — front left view",
+    "restored": true,
+    "chart": "40,500",
+    "broken": 0,
+    "chapterTitle": "Put the asking price beside the records.",
+    "overflow": false,
+    "visibleDates": [
+      "2021",
+      "2023",
+      "2025",
+      "Nov 2026"
+    ]
+  },
+  {
+    "car": "amaze",
+    "width": 1440,
+    "galleryAlt": "Honda Amaze 1.2L i-VTEC VX — front left view",
+    "restored": true,
+    "chart": "48,800",
+    "broken": 0,
+    "chapterTitle": "Check the owner. Follow up on the lender.",
+    "overflow": false,
+    "visibleDates": [
+      "2022",
+      "2024",
+      "Nov 2026"
+    ]
+  }
+]

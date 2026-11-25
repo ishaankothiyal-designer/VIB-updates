@@ -1,0 +1,987 @@
+[
+  {
+    "d": 0,
+    "n": 0,
+    "beforeCase": "swift",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 9.633270263671877
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 1,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 13.725311279296877
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 2,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 16.47186279296875
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 3,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 18.732177734375
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 4,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 22.852249145507812
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 5,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 27.47930908203125
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 6,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 29.203109741210938
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 7,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 31.329299926757812
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 8,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 32.17692565917969
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 9,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 30.1778564453125
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 10,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 28.522872924804688
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 11,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 27.2939453125
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 12,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 26.418960571289062
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 13,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 25.75048828125
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 14,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 25.3367919921875
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 15,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 25.03749084472656
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 16,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.83197021484375
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 17,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.76380920410156
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 18,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.74786376953125
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 19,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.744110107421875
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 20,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.74378967285156
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 0,
+    "n": 21,
+    "beforeCase": "swift",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.74378967285156
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": false,
+    "turning": "false"
+  },
+  {
+    "d": 1,
+    "n": 0,
+    "beforeCase": "creta",
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 12.375930786132812
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 1,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 13.983627319335938
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 2,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 15.51873779296875
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 3,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 19.0478515625
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 4,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 23.13951110839844
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 5,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 25.441696166992188
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 6,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 27.7093505859375
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 7,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 29.3963623046875
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 8,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 30.785369873046875
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 9,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 32.01118469238281
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 10,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 29.863525390625
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 11,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 28.376754760742188
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 12,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 27.220672607421875
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 13,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 26.265655517578125
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 14,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 25.728439331054688
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 15,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 25.264007568359375
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 16,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 25.020477294921875
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 17,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 24.82537841796875
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 18,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 24.75152587890625
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 19,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 24.744842529296875
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 20,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 24.74378967285156
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 1,
+    "n": 21,
+    "beforeCase": "creta",
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 24.74378967285156
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": false,
+    "turning": "false"
+  },
+  {
+    "d": 2,
+    "n": 0,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 1,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 13.983627319335938
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 2,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 14.644210815429688
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 3,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 17.939468383789062
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 4,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 21.9388427734375
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 5,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 25.5943603515625
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 6,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 28.573715209960938
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 7,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 30.121124267578125
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 8,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 31.46063232421875
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 9,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 31.89930725097656
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 10,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 29.863525390625
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 11,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 28.376754760742188
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 12,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 26.714141845703125
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 13,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 25.953338623046875
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 14,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 25.446212768554688
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 15,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 25.020477294921875
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 16,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 24.860061645507812
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 17,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 24.77471923828125
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 18,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 24.75152587890625
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 19,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 24.74501037597656
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 20,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 24.74378967285156
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "d": 2,
+    "n": 21,
+    "beforeCase": "brezza",
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 24.74378967285156
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": false,
+    "turning": "false"
+  }
+]

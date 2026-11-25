@@ -23,7 +23,7 @@ for id in ['creta','brezza']:
  s.select_one('#photo-viewer')
 home=Soup((D/'index.html').read_text(),'html.parser');assert not home.select('.case-selector,.case-selectors')
 assert home.select_one('.case-deck-footer #case-report-action') and home.select_one('.case-pause') and home.select_one('.case-next')
-allowed={'index.html','sample-creta.html','sample-brezza.html','sample-swift.html','sample.html','swift-report.css','swift-report.js','hero-deck.css','hero-deck.js'}
+allowed={'index.html','sample-creta.html','sample-brezza.html','sample-swift.html','sample.html','swift-report.css','swift-report.js','hero-deck.css','hero-deck.js',*('sample-'+id+'.html' for id in ['baleno','city','nexon','i20','venue','tiago','amaze'])}
 base=json.loads((B/'data/issue-reports-baseline-2026-11-25.json').read_text())
 for file,h in base.items():
  if file not in allowed:assert hashlib.sha256((D/file).read_bytes()).hexdigest()==h,file

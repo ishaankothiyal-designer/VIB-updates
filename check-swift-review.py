@@ -24,7 +24,7 @@ assert '₹3.4–3.8' in text and '₹4,40,000' in text and '₹4,00,000' in tex
 assert len(s.select('noscript a'))==4
 assert not s.select('.vehicle-picker,.car-files')
 baseline=json.loads((B/'data/swift-review-baseline-2026-11-24.json').read_text())
-allowed_changes={'cars.json','sample.html','index.html','sample-creta.html','sample-brezza.html'}
+allowed_changes={'cars.json','sample.html','index.html',*('sample-'+id+'.html' for id in ['baleno','city','creta','nexon','i20','venue','brezza','tiago','amaze'])}
 for name,h in baseline.items():
  if name in allowed_changes:continue
  assert (D/name).is_file() and hashlib.sha256((D/name).read_bytes()).hexdigest()==h,f'Changed outside Swift scope: {name}'

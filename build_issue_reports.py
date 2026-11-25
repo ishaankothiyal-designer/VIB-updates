@@ -1,4 +1,4 @@
-"""Creta and Brezza: shared Swift report system, vehicle-specific evidence stories."""
+"""Nine issue-led reports in the shared Swift system, using exact vehicle fixtures."""
 from pathlib import Path
 from bs4 import BeautifulSoup as Soup
 from html import escape as e
@@ -6,14 +6,23 @@ import json
 from build_swift_report import chapter,details,question,fmt,amount
 from swift_mileage import render_mileage
 B=Path(__file__).resolve().parent;D=B/'dist'
+STORIES={
+ 'baleno':('Baleno','mileage','Five invoices.<br>Read them in sequence.','Five dated invoices form the available service trail. Compare the latest record with the seller’s reading and the odometer today.','Can we compare these five invoices with the odometer today?'),
+ 'city':('City','ownership','A second owner.<br>The same details to verify.','Two owners are recorded. Match the person selling this City with the current registration certificate and ownership documents.','Can we match the current seller’s details and ownership history to the registration certificate?'),
+ 'nexon':('Nexon','finance','A short history.<br>A lender entry to follow up.','Two service invoices are available for this Nexon. Its lender entry is active and no closure document has been provided.','Can we review the lender’s closure documents and the available service invoices?'),
+ 'i20':('Elite i20','mileage','The service trail<br>stops in July 2024.','The last available invoice records 45,300 km. The later seller declaration is 81,500 km. Ask for the records in between.','Can we see the service invoices after July 2024?'),
+ 'venue':('Venue','finance','A closure document.<br>An entry still active.','A closure document is available, but the registration record still shows an active lender entry. Compare the two before transfer.','Can we compare the closure letter with the latest registration entry?'),
+ 'tiago':('Tiago','valuation','Put the asking price<br>beside the records.','The latest asking price is ₹4 lakh. The reference range is ₹3.2–3.8 lakh. Use the service records and an inspection to discuss the difference.','How does the asking price reflect these records and the car’s condition today?'),
+ 'amaze':('Amaze','ownership','Check the owner.<br>Follow up on the lender.','This Amaze has two recorded owners and an active lender entry. No closure document has been provided.','Can we verify the current owner and lender closure documents before transfer?')}
+
 def fragment(html):return Soup(html,'html.parser')
 def build_issue_reports():
  for c in json.loads((D/'cars.json').read_text())['cars']:
-  if c['id'] not in ['creta','brezza']:continue
-  creta=c['id']=='creta';short='Creta' if creta else 'Brezza';full=c['name']+' '+c['variant'];owners='First owner' if c['owners']==1 else 'Second owner'
+  if c['id']=='swift':continue
+  creta=c['id']=='creta';story=STORIES.get(c['id']);short=story[0] if story else ('Creta' if creta else 'Brezza');full=c['name']+' '+c['variant'];owners='First owner' if c['owners']==1 else 'Second owner'
   s=Soup((D/'sample-swift.html').read_text(),'html.parser')
   s.title.string=f'{c["year"]} {short} — VIB vehicle history report'
-  s.select_one('meta[name=description]')['content']=f'Read this {c["year"]} {short} report: photos, '+('lender entry and closure documents' if creta else 'unpaid challan and document dates')+', service history and questions for the seller.'
+  s.select_one('meta[name=description]')['content']=f'Read this {c["year"]} {short} report: photos, '+('the available records and seller questions' if story else ('lender entry and closure documents' if creta else 'unpaid challan and document dates'))+', service history and questions for the seller.'
   def replace(selector,html):s.select_one(selector).replace_with(fragment(html))
   replace('.cover-copy h1',f'<h1>{e(c["name"])} <span>{e(c["variant"])}</span></h1>')
   s.select_one('.cover-specs').string=f'{c["year"]} · {c["fuel"]} · {c["transmission"]}'
@@ -28,22 +37,40 @@ def build_issue_reports():
   for a,p in zip(s.select('noscript a'),c['photos']):a['href']=p['src']
   s.select_one('.condition-value strong').string=str(c['score']['value']);s.select_one('.condition-track span')['style']=f'width:{c["score"]["value"]}%';s.select_one('.condition-snapshot h2').string=c['score']['label']
   findings=[('finance','The lender entry is still active.','Closure documents have not been provided.','Documents needed'),('claims','A repair claim is on record.','Read the invoice and inspect the work.',amount(c['claim']['amount'])),('mileage','Compare the dated mileage records.','The seller declares a higher reading than the last invoice.',f'{c["declaredKm"]:,} km')] if creta else [('challans','One challan is marked unpaid.','Verify the current status and payment receipt.','₹1,500'),('challans','The PUC date has passed.','Ask for a renewed certificate.','9 Oct 2026'),('ownership','Two owners are recorded.','Match the seller’s details with the registration certificate.','Second owner')]
-  replace('.priority-findings','<div class="priority-findings"><p class="report-kicker">Before you decide</p><h2 id="overview-heading">'+('Start with the lender entry.' if creta else 'Start with the open challan.')+'</h2>'+''.join(f'<a href="#{anchor}"><span><b>{title}</b><small>{copy}</small></span><strong class="finding-word">{value}</strong></a>' for anchor,title,copy,value in findings)+'</div>')
+  if story:
+   lead=story[1];facts={
+    'mileage':('Read the dated service trail.',f'{len(c["services"])} invoices; latest {c["services"][-1]["km"]:,} km.',f'{c["declaredKm"]:,} km'),
+    'ownership':('Match the current owner.',f'{c["owners"]} '+('owner recorded.' if c['owners']==1 else 'owners recorded.')+' Compare the registration certificate.',owners),
+    'finance':('Reconcile the lender documents.' if c['closureDocument'] else 'Follow up on the lender entry.','Closure document available; entry remains active.' if c['closureDocument'] else 'Active entry; no closure document provided.','Active entry'),
+    'valuation':('Put the asking price in context.','Read the reference range with the history and an inspection.',amount(c['askingPrices'][-1]['amount'])),
+    'claims':('Read the repair record.','Inspect the repair and compare its invoice.',amount(c['claim']['amount']) if c['claim'] else 'No entry'),
+    'challans':('Verify the challan status.','Check the recorded entries with the seller.',amount(sum(r['amount'] for r in c['challans'])))}
+   secondary=['finance','mileage'] if lead=='ownership' and c['lenderActive'] else ['mileage','challans'] if lead=='ownership' else ['mileage','ownership'] if lead in ['finance','valuation'] else ['ownership','valuation']
+   findings=[(id,*facts[id]) for id in [lead,*secondary]]
+   if c['serviceGap']:findings[0]=('mileage','The service trail stops in July 2024.','No later service invoice is included. Ask for the missing records.','45,300 km')
+  replace('.priority-findings','<div class="priority-findings"><p class="report-kicker">Before you decide</p><h2 id="overview-heading">'+(({'mileage':'Start with the service trail.','ownership':'Start with the ownership details.','finance':'Start with the lender documents.','valuation':'Start with the asking price.'}[story[1]]) if story else ('Start with the lender entry.' if creta else 'Start with the open challan.'))+'</h2>'+''.join(f'<a href="#{anchor}"><span><b>{title}</b><small>{copy}</small></span><strong class="finding-word">{value}</strong></a>' for anchor,title,copy,value in findings)+'</div>')
   order=['photos','finance','mileage','ownership','claims','challans','valuation','timeline'] if creta else ['photos','challans','ownership','mileage','finance','claims','valuation','timeline']
+  if story:order=['photos',story[1]]+[id for id in ['mileage','ownership','finance','claims','challans','valuation','timeline'] if id!=story[1]]
   navlabels={'photos':'Photos','finance':'Finance','mileage':'Mileage','ownership':'Ownership','claims':'Repairs','challans':'Challans & documents','valuation':'Price','timeline':'Timeline'}
   links=''.join(f'<a href="#{id}">{navlabels[id]}</a>' for id in order)
   s.select_one('.chapter-nav').clear();s.select_one('.chapter-nav').append(fragment(links));s.select_one('.chapter-menu nav').clear();s.select_one('.chapter-menu nav').append(fragment(links))
   chapters={}
   def add(id,label,title,intro,body,prompt,source):chapters[id]=chapter(id,order.index(id)+1,label,title,intro,body,prompt,source)
-  if creta:
+  if c['lenderActive']:
    financebody='<div class="issue-lead"><span class="record-state attention">Active lender entry</span><h3>The entry is present.<br>The closure proof is missing.</h3><p>The registration record shows a lender’s interest. The available records do not establish the loan balance or repayment status.</p></div><ol class="document-path"><li class="recorded"><span>On record</span><h4>Lender entry</h4><p>Active in the registration record.</p></li><li><span>To request</span><h4>Closure documents</h4><p>No closure document has been provided.</p></li><li><span>To verify</span><h4>Current registration</h4><p>Compare the latest record with the lender’s documents.</p></li></ol>'+details([('Lender description',c['lender']),('Loan balance','Unavailable'),('Repayment status','Unavailable')])
+   if c['closureDocument']:
+    financebody='<div class="issue-lead"><span class="record-state attention">Active entry · closure document available</span><h3>The document is available.<br>Check the registration entry.</h3><p>Compare the closure letter with the latest registration record. The available document does not establish that the entry has been updated.</p></div>'+details([('Lender entry','Active in the record'),('Closure document','Available'),('Loan balance / repayment','Unavailable'),('Next check','Compare with current registration')])
    add('finance','Finance & transfer','Before the transfer,<br>follow up on the lender.','This is the first question for this Creta. Ask to see the closure documents, then check the current registration entry.',financebody,question('Can we review the lender’s closure documents and the latest registration record?',link=('guide-finance.html','Understand lender entries')),'Registration finance entry')
   else:
    add('finance','Finance & transfer','Check the current<br>finance record.','No active lender entry is shown in this record set. Compare it with the current registration certificate.','<div class="issue-lead"><span class="record-state">No active entry shown</span><h3>Keep the latest record beside you.</h3><p>A missing active entry does not establish the vehicle’s full finance history.</p></div>'+details([('Active lender entry','Not shown'),('Loan balance / repayment','Unavailable')]),question('Does the latest registration certificate show the same finance status?'),'Registration finance entry')
   rows=''.join(f'<li><div><h4>{e(r["offence"])}</h4><p>{fmt(r["date"])} · {r["id"]}</p></div><div><strong>{amount(r["amount"])}</strong><span>{r["status"]}</span></div></li>' for r in c['challans'])
-  if creta:docbody='<div class="issue-lead"><span class="record-state">No challans in this record set</span><h3>Check the dates as well.</h3><p>Confirm the current challan status with the seller. An empty record set is not a guarantee of no outstanding entries.</p></div>'
+  if not c['challans']:docbody='<div class="issue-lead"><span class="record-state">No challans in this record set</span><h3>Check the dates as well.</h3><p>Confirm the current challan status with the seller. An empty record set is not a guarantee of no outstanding entries.</p></div>'
   else:docbody='<div class="issue-lead challan-receipt"><span class="record-state attention">One unpaid entry</span><h3>₹1,500</h3><p>Recorded as unpaid. Verify today’s status before discussing the transfer.</p></div><ul class="challan-list">'+rows+'</ul><div class="document-followup"><span>What to ask for</span><h4>A payment receipt and the current status.</h4><p>Match the receipt to challan CH-08-001. The record here does not confirm a later payment.</p></div>'
-  docbody+='<div class="surface-divider"></div><div class="surface-heading"><h3>Document dates</h3></div>'+details([('Registration valid until',fmt(c['validUntil'])),('PUC valid until',fmt(c['pucUntil'])),('PUC at report date','Within recorded validity' if creta else 'Recorded validity has ended'),('Road tax','Paid in the record')])
+  if story and c['challans']:
+   unpaid=[r for r in c['challans'] if r['status']=='Unpaid'];total=sum(r['amount'] for r in unpaid)
+   docbody=f'<div class="issue-lead challan-receipt"><span class="record-state attention">{len(unpaid)} unpaid entry</span><h3>{amount(total)}</h3><p>Verify the current status and any payment receipt with the seller.</p></div><ul class="challan-list">'+rows+'</ul>'
+  puc_valid=c['pucUntil']>=c['reportDate']
+  docbody+='<div class="surface-divider"></div><div class="surface-heading"><h3>Document dates</h3></div>'+details([('Registration valid until',fmt(c['validUntil'])),('PUC valid until',fmt(c['pucUntil'])),('PUC at report date','Within recorded validity' if puc_valid else 'Recorded validity has ended'),('Road tax','Paid in the record')])
   add('challans','Challans & documents','Clear up the challan.<br>Check the document dates.' if not creta else 'Keep the documents<br>in date.','This Brezza has one unpaid entry and a PUC date that has passed. Take both questions to the seller.' if not creta else 'Read validity dates with the current documents. Check for any entries recorded after this report.',docbody,question('Can we verify this challan’s payment and see a renewed PUC certificate?' if not creta else 'Can we check the current challan status and document dates?'),'Challan and registration record set')
   ownbody='<div class="surface-heading"><h3>Identity & ownership</h3><span class="record-state">'+owners+'</span></div>'+details([('First registered',fmt(c['registeredOn'])),('Registration region',c['region']),('Registration',c['registration']),('Owners recorded',str(c['owners'])),('Fuel / transmission',c['fuel']+' / '+c['transmission']),('Usage',c['usage']),('Modifications',c['modifications']),('Registration valid until',fmt(c['validUntil']))],'facts-grid')+'<p class="surface-footnote">Factory equipment and engine specifications have not been verified in this record set.</p>'
   add('ownership','Identity & ownership','Match the car.<br>Then match the seller.','Read the registration certificate beside the car and the seller’s documents. Confirm the recorded ownership details.',ownbody,question('Do the seller and vehicle details match the current registration certificate?'),'Registration record')
@@ -51,15 +78,37 @@ def build_issue_reports():
   visits=''.join(f'<li><div class="visit-meta"><time datetime="{r["date"]}">{fmt(r["date"])}</time><strong>{r["km"]:,} km</strong></div><div><h4>{r["work"]}</h4><p>{e(r["workshop"])}</p><span>{r["id"]}</span></div><b>{amount(r["amount"])}</b></li>' for r in reversed(c['services']))
   graph+=f'<details class="service-invoices" open><summary>Service invoices<span>{len(c["services"])} visits</span></summary><ol>{visits}</ol></details>'
   add('mileage','Mileage & service','Follow the readings<br>through the years.','The seller’s declaration is higher than the last service reading. Compare both with the odometer and the original invoices.',graph,question('Can we compare these invoices with the odometer today?'),'Service invoices and seller declaration')
-  cl=c['claim'];claimbody=f'<div class="claim-feature"><div><span>Repair claim · {fmt(cl["date"])}</span><strong>{amount(cl["amount"])}</strong><p>{cl["part"]}</p></div><span class="record-state">{cl["status"]}</span></div>'+details([('Accident severity','Not established'),('Current repair condition','Not assessed')])+'<div class="surface-divider"></div><div class="surface-heading"><h3>Insurance policy</h3></div>'+details([('Cover type',c['policyType']),('Policy valid until',fmt(c['policyUntil']))])
-  add('claims','Insurance & repairs','Understand the repair.<br>Inspect the work.','The claim records a repair and an amount. It does not establish accident severity or the quality of the work today.',claimbody,question('Can we read the repair invoice and inspect these parts?',link=('guide-inspection.html','Use records with an inspection')),'Policy and claim record set')
+  cl=c['claim']
+  if cl:
+   claimbody=f'<div class="claim-feature"><div><span>Repair claim · {fmt(cl["date"])}</span><strong>{amount(cl["amount"])}</strong><p>{cl["part"]}</p></div><span class="record-state">{cl["status"]}</span></div>'+details([('Accident severity','Not established'),('Current repair condition','Not assessed')])
+  else:
+   claimbody='<div class="issue-lead"><span class="record-state">No claim entry in available records</span><h3>Let the inspection<br>fill in what records cannot.</h3><p>This record set contains no claim entry. It does not establish an accident-free history or the car’s condition today.</p></div>'
+  claimbody+='<div class="surface-divider"></div><div class="surface-heading"><h3>Insurance policy</h3></div>'+details([('Cover type',c['policyType']),('Policy valid until',fmt(c['policyUntil']))])
+  add('claims','Insurance & repairs',('Understand the repair.<br>Inspect the work.' if cl else 'Read the policy.<br>Inspect the car.'),('The claim records a repair and an amount. It does not establish accident severity or the quality of the work today.' if cl else 'Read the available policy record, then inspect the car. Missing claim information is not evidence of no previous damage.'),claimbody,question('Can we read the repair invoice and inspect these parts?' if cl else 'Can we review the policy and inspect for any previous repairs?',link=('guide-inspection.html','Use records with an inspection')),'Policy and claim record set')
   low,high=c['priceRangeLakh'];listing=''.join(f'<div><time datetime="{r["date"]}">{fmt(r["date"])}</time><strong>{amount(r["amount"])}</strong><span>Asking price</span></div>' for r in c['askingPrices'])
   price=f'<span class="value-label">Reference price range</span><h3 class="price-range">₹{low:.1f}–{high:.1f} <span>lakh</span></h3><p class="price-context">{c["year"]} {short} · {c["region"]}</p><div class="price-range-line" aria-hidden="true"><span></span><span></span></div><p class="surface-footnote">A reference range for this sample, not a live valuation or an offer.</p><div class="surface-divider"></div><h4 class="subheading">Previous asking prices</h4><div class="asking-history">{listing}</div><p class="surface-footnote">Asking prices are not completed-sale prices. Comparable sales and peer ranking are unavailable.</p>'
   add('valuation','Price context','Put the history<br>beside the price.','Discuss the asking price with the records and a physical inspection in mind.',price,question('How does the asking price reflect the records and the car today?'),'Reference range and listing history')
-  events=[(c['registeredOn'],'First registration',c['region'])]+[(r['date'],'Service invoice',f'{r["km"]:,} km · {r["work"]}') for r in c['services']]+[(cl['date'],'Repair claim '+cl['status'].lower(),f'{amount(cl["amount"])} · {cl["part"]}')]+[(r['date'],'Asking price recorded',amount(r['amount'])) for r in c['askingPrices']]+[(r['date'],r['offence'],f'{amount(r["amount"])} · {r["status"]}') for r in c['challans']]+[(c['sellerDate'],'Seller mileage declaration',f'{c["declaredKm"]:,} km')]
-  if not creta:events.append((c['pucUntil'],'Recorded PUC validity ended','Ask for a renewed certificate.'))
+  events=[(c['registeredOn'],'First registration',c['region'])]+[(r['date'],'Service invoice',f'{r["km"]:,} km · {r["work"]}') for r in c['services']]+([(cl['date'],'Repair claim '+cl['status'].lower(),f'{amount(cl["amount"])} · {cl["part"]}')] if cl else [])+[(r['date'],'Asking price recorded',amount(r['amount'])) for r in c['askingPrices']]+[(r['date'],r['offence'],f'{amount(r["amount"])} · {r["status"]}') for r in c['challans']]+[(c['sellerDate'],'Seller mileage declaration',f'{c["declaredKm"]:,} km')]
+  if not puc_valid:events.append((c['pucUntil'],'Recorded PUC validity ended','Ask for a renewed certificate.'))
   timeline='<ol class="swift-timeline">'+''.join(f'<li><time datetime="{d}">{fmt(d)}</time><div><h3>{h}</h3><p>{copy}</p></div></li>' for d,h,copy in sorted(events,key=lambda r:r[0]))+'</ol>'
   add('timeline','The complete timeline','Read the dates<br>together.','The available registration, service, repair and listing records, each with its own date.',timeline,question('Can you help me fill in the gaps between these records?'),'Combined record set')
+  if story:
+   for id in chapters:
+    ch=fragment(chapters[id]);heading=ch.select_one('.chapter-heading')
+    if id=='finance' and c['lenderActive']:
+     heading.h2.string='Reconcile the lender documents.'
+     heading.select('p')[-1].string='Compare the current registration record with the lender’s documents before arranging a transfer.'
+    if id=='challans':
+     heading.h2.string='Check the entries and document dates.'
+     heading.select('p')[-1].string='Verify the current status and validity dates with the seller. These records describe the position at the report date.'
+     ch.select_one('.seller-prompt p').string='“Can we verify the current challan status and document dates?”'
+    if id==story[1]:
+     heading.h2.clear();heading.h2.append(fragment(story[2].replace('<br>',' <br>')));heading.select('p')[-1].string=story[3]
+     ch.select_one('.seller-prompt p').string='“'+story[4]+'”'
+    if id=='mileage' and c['serviceGap']:
+     notice=fragment('<div class="service-gap-note"><span>Missing service records</span><h3>No service invoice after July 2024 is included.</h3><p>The shaded interval leads to a seller declaration, not another service record. Ask for the invoices in between.</p></div>')
+     ch.select_one('.mileage-experience').insert(0,notice)
+    chapters[id]=str(ch)
   anchor=s.select_one('.chapter-menu')
   for el in s.select('.swift-chapter'):el.decompose()
   for id in order[1:]:
@@ -68,4 +117,4 @@ def build_issue_reports():
   s.select_one('#swift-report-data').string=json.dumps(payload,ensure_ascii=False).replace('</','<\\/')
   s.body['data-vehicle']=c['id']
   (D/f'sample-{c["id"]}.html').write_text(str(s))
-if __name__=='__main__':build_issue_reports();print('Built Creta and Brezza issue-led reports.')
+if __name__=='__main__':build_issue_reports();print('Built nine issue-led reports.')

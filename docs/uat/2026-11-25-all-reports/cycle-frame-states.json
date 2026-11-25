@@ -1,0 +1,948 @@
+[
+  {
+    "direction": 0,
+    "sample": 0,
+    "case": "creta",
+    "faces": [],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 1,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 13.95538330078125,
+        "opacity": "0.2914",
+        "transform": "matrix3d(0.451131, 0.0102376, -0.812159, 0, -0.0210788, 0.928861, 0, 0, 0.87391, 0.0198318, 0.485683, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 2,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 16.587966918945312,
+        "opacity": "0.4656",
+        "transform": "matrix3d(0.657891, 0.0149296, -0.680447, 0, -0.0214758, 0.946356, 0, 0, 0.718648, 0.0163084, 0.695183, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 3,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 20.480667114257812,
+        "opacity": "0.6055",
+        "transform": "matrix3d(0.796889, 0.0180839, -0.536091, 0, -0.0217935, 0.960353, 0, 0, 0.557936, 0.0126613, 0.829787, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 4,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.3311767578125,
+        "opacity": "0.716",
+        "transform": "matrix3d(0.884435, 0.0200706, -0.40172, 0, -0.022043, 0.97135, 0, 0, 0.413356, 0.00938035, 0.910521, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 5,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 27.595382690429688,
+        "opacity": "0.8015",
+        "transform": "matrix3d(0.936668, 0.021256, -0.287744, 0, -0.0222359, 0.979848, 0, 0, 0.293511, 0.0066607, 0.955932, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 6,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 30.121124267578125,
+        "opacity": "0.866",
+        "transform": "matrix3d(0.96647, 0.0219323, -0.197064, 0, -0.0223833, 0.986346, 0, 0, 0.199689, 0.00453159, 0.979849, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 7,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 32.01118469238281,
+        "opacity": "0.9134",
+        "transform": "matrix3d(0.982681, 0.0223002, -0.128516, 0, -0.02249, 0.991045, 0, 0, 0.12961, 0.00294127, 0.991561, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 8,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 29.96714782714844,
+        "opacity": "0.9469",
+        "transform": "matrix3d(0.991289, 0.0224955, -0.0791716, 0, -0.0225671, 0.994444, 0, 0, 0.079573, 0.00180576, 0.996827, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 9,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 27.741424560546875,
+        "opacity": "0.9696",
+        "transform": "matrix3d(0.995707, 0.0225958, -0.0454511, 0, -0.0226193, 0.996743, 0, 0, 0.0455762, 0.00103427, 0.99896, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 10,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 26.0086669921875,
+        "opacity": "0.9874",
+        "transform": "matrix3d(0.998265, 0.0226538, -0.018878, 0, -0.0226578, 0.998443, 0, 0, 0.0188977, 0.000428848, 0.999821, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 11,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 25.463424682617188,
+        "opacity": "0.9927",
+        "transform": "matrix3d(0.998982, 0.0226701, -0.0109789, 0, -0.0226715, 0.999043, 0, 0, 0.0109838, 0.000249257, 0.99994, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 12,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 25.02886962890625,
+        "opacity": "0.9972",
+        "transform": "matrix3d(0.999434, 0.0226803, -0.00419973, 0, -0.0226805, 0.999443, 0, 0, 0.00419991, 9.53094e-05, 0.999991, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 13,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.860061645507812,
+        "opacity": "0.9988",
+        "transform": "matrix3d(0.999641, 0.022685, -0.0018551, 0, -0.0226851, 0.999643, 0, 0, 0.00185481, 4.20914e-05, 0.999998, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 14,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.76226806640625,
+        "opacity": "0.9997",
+        "transform": "matrix3d(0.999743, 0.0226873, -0.00039619, 0, -0.0226873, 0.999743, 0, 0, 0.000396088, 8.98849e-06, 1, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 15,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.74786376953125,
+        "opacity": "0.9999",
+        "transform": "matrix3d(0.999743, 0.0226873, -8.72665e-05, 0, -0.0226873, 0.999743, 0, 0, 8.7244e-05, 1.97984e-06, 1, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 16,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.744110107421875,
+        "opacity": "1",
+        "transform": "matrix3d(0.999743, 0.0226873, -6.98132e-06, 0, -0.0226873, 0.999743, 0, 0, 6.97952e-06, 1.58387e-07, 1, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 0,
+    "sample": 17,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.74378967285156,
+        "opacity": "1",
+        "transform": "matrix(0.999743, 0.0226873, -0.0226873, 0.999743, 0, 0)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": false,
+    "turning": "false"
+  },
+  {
+    "direction": 0,
+    "sample": 18,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.74378967285156,
+        "opacity": "1",
+        "transform": "matrix(0.999743, 0.0226873, -0.0226873, 0.999743, 0, 0)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": false,
+    "turning": "false"
+  },
+  {
+    "direction": 0,
+    "sample": 19,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 24.74378967285156,
+        "opacity": "1",
+        "transform": "matrix(0.999743, 0.0226873, -0.0226873, 0.999743, 0, 0)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": false,
+    "turning": "false"
+  },
+  {
+    "direction": 1,
+    "sample": 0,
+    "case": "creta",
+    "faces": [
+      {
+        "case": "1",
+        "gap": 12.03424072265625,
+        "opacity": "0.1042",
+        "transform": "matrix3d(0.204086, 0.00463137, 0.887218, 0, -0.0206545, 0.910166, 0, 0, -0.974285, -0.0221096, 0.22423, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-creta.html#finance",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 1,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 13.696868896484377,
+        "opacity": "0.2275",
+        "transform": "matrix3d(0.36886, 0.0083706, -0.845832, 0, -0.0209359, 0.922562, 0, 0, 0.916357, 0.0207951, 0.399821, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 2,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 15.51873779296875,
+        "opacity": "0.4138",
+        "transform": "matrix3d(0.59977, 0.0136107, -0.725483, 0, -0.0213579, 0.941158, 0, 0, 0.770444, 0.0174838, 0.637268, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 3,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 19.221115112304688,
+        "opacity": "0.5642",
+        "transform": "matrix3d(0.758778, 0.0172191, -0.581945, 0, -0.0216982, 0.956154, 0, 0, 0.608318, 0.0138047, 0.793573, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 4,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 23.13951110839844,
+        "opacity": "0.6836",
+        "transform": "matrix3d(0.861005, 0.0195389, -0.442817, 0, -0.0219704, 0.968151, 0, 0, 0.457149, 0.0103742, 0.889329, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 5,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 25.441696166992188,
+        "opacity": "0.7459",
+        "transform": "matrix3d(0.904328, 0.0205221, -0.362788, 0, -0.0221111, 0.974349, 0, 0, 0.372147, 0.0084452, 0.928135, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 6,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 27.595382690429688,
+        "opacity": "0.8015",
+        "transform": "matrix3d(0.936668, 0.021256, -0.287744, 0, -0.0222359, 0.979848, 0, 0, 0.293511, 0.0066607, 0.955932, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 7,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 29.3963623046875,
+        "opacity": "0.8474",
+        "transform": "matrix3d(0.958739, 0.0217568, -0.223562, 0, -0.0223402, 0.984447, 0, 0, 0.226977, 0.00515083, 0.973886, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 8,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 30.785369873046875,
+        "opacity": "0.8829",
+        "transform": "matrix3d(0.972818, 0.0220763, -0.172841, 0, -0.0224219, 0.988046, 0, 0, 0.174842, 0.00396773, 0.984588, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 9,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 32.01118469238281,
+        "opacity": "0.9134",
+        "transform": "matrix3d(0.982681, 0.0223002, -0.128516, 0, -0.02249, 0.991045, 0, 0, 0.12961, 0.00294127, 0.991561, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 10,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 29.96714782714844,
+        "opacity": "0.9469",
+        "transform": "matrix3d(0.991289, 0.0224955, -0.0791716, 0, -0.0225671, 0.994444, 0, 0, 0.079573, 0.00180576, 0.996827, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 11,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 28.434738159179688,
+        "opacity": "0.9625",
+        "transform": "matrix3d(0.994468, 0.0225676, -0.0560212, 0, -0.0226034, 0.996044, 0, 0, 0.0562148, 0.00127569, 0.998418, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 12,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 26.714141845703125,
+        "opacity": "0.9802",
+        "transform": "matrix3d(0.997304, 0.022632, -0.0296191, 0, -0.022642, 0.997743, 0, 0, 0.0296708, 0.000673325, 0.999559, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 13,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 26.0086669921875,
+        "opacity": "0.9874",
+        "transform": "matrix3d(0.998265, 0.0226538, -0.018878, 0, -0.0226578, 0.998443, 0, 0, 0.0188977, 0.000428848, 0.999821, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 14,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 25.463424682617188,
+        "opacity": "0.9927",
+        "transform": "matrix3d(0.998982, 0.0226701, -0.0109789, 0, -0.0226715, 0.999043, 0, 0, 0.0109838, 0.000249257, 0.99994, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 15,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 25.02886962890625,
+        "opacity": "0.9972",
+        "transform": "matrix3d(0.999434, 0.0226803, -0.00419973, 0, -0.0226805, 0.999443, 0, 0, 0.00419991, 9.53094e-05, 0.999991, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 16,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 24.828689575195312,
+        "opacity": "0.9992",
+        "transform": "matrix3d(0.999642, 0.022685, -0.00118147, 0, -0.0226851, 0.999643, 0, 0, 0.00118128, 2.68071e-05, 0.999999, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 17,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 24.76087951660156,
+        "opacity": "0.9998",
+        "transform": "matrix3d(0.999743, 0.0226873, -0.000366519, 0, -0.0226873, 0.999743, 0, 0, 0.000366425, 8.31534e-06, 1, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 18,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 24.74745178222656,
+        "opacity": "0.9999",
+        "transform": "matrix3d(0.999743, 0.0226873, -7.85398e-05, 0, -0.0226873, 0.999743, 0, 0, 7.85196e-05, 1.78186e-06, 1, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 1,
+    "sample": 19,
+    "case": "brezza",
+    "faces": [
+      {
+        "case": "2",
+        "gap": 24.74403381347656,
+        "opacity": "1",
+        "transform": "matrix3d(0.999743, 0.0226873, -5.23599e-06, 0, -0.0226873, 0.999743, 0, 0, 5.23464e-06, 1.18791e-07, 1, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-brezza.html#challans",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 0,
+    "case": "swift",
+    "faces": [],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 1,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 13.696868896484377,
+        "opacity": "0.2275",
+        "transform": "matrix3d(0.36886, 0.0083706, -0.845832, 0, -0.0209359, 0.922562, 0, 0, 0.916357, 0.0207951, 0.399821, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 2,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 14.54150390625,
+        "opacity": "0.3512",
+        "transform": "matrix3d(0.525465, 0.0119245, -0.773406, 0, -0.0212149, 0.934859, 0, 0, 0.826871, 0.0187643, 0.562079, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 3,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 17.791946411132812,
+        "opacity": "0.5139",
+        "transform": "matrix3d(0.70899, 0.0160892, -0.634221, 0, -0.0215847, 0.951155, 0, 0, 0.666447, 0.0151238, 0.745399, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 4,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 21.76231384277344,
+        "opacity": "0.6439",
+        "transform": "matrix3d(0.829662, 0.0188277, -0.491298, 0, -0.0218797, 0.964152, 0, 0, 0.509302, 0.0115577, 0.86051, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 5,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 25.441696166992188,
+        "opacity": "0.7459",
+        "transform": "matrix3d(0.904328, 0.0205221, -0.362788, 0, -0.0221111, 0.974349, 0, 0, 0.372147, 0.0084452, 0.928135, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 6,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 27.595382690429688,
+        "opacity": "0.8015",
+        "transform": "matrix3d(0.936668, 0.021256, -0.287744, 0, -0.0222359, 0.979848, 0, 0, 0.293511, 0.0066607, 0.955932, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 7,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 29.3963623046875,
+        "opacity": "0.8474",
+        "transform": "matrix3d(0.958739, 0.0217568, -0.223562, 0, -0.0223402, 0.984447, 0, 0, 0.226977, 0.00515083, 0.973886, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 8,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 31.395843505859375,
+        "opacity": "0.8981",
+        "transform": "matrix3d(0.977992, 0.0221937, -0.150807, 0, -0.0224559, 0.989545, 0, 0, 0.152322, 0.00345667, 0.988325, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 9,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 32.051910400390625,
+        "opacity": "0.9255",
+        "transform": "matrix3d(0.986042, 0.0223764, -0.110802, 0, -0.0225172, 0.992245, 0, 0, 0.11161, 0.00253279, 0.993749, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 10,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 30.07196044921875,
+        "opacity": "0.9458",
+        "transform": "matrix3d(0.991055, 0.0224902, -0.080823, 0, -0.0225648, 0.994344, 0, 0, 0.0812409, 0.00184361, 0.996693, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 11,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 28.376754760742188,
+        "opacity": "0.9634",
+        "transform": "matrix3d(0.994538, 0.0225692, -0.054759, 0, -0.0226034, 0.996044, 0, 0, 0.0549482, 0.00124695, 0.998488, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 12,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 27.220672607421875,
+        "opacity": "0.975",
+        "transform": "matrix3d(0.996543, 0.0226147, -0.0373715, 0, -0.0226306, 0.997243, 0, 0, 0.0374556, 0.000849985, 0.999298, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 13,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 26.357391357421875,
+        "opacity": "0.9837",
+        "transform": "matrix3d(0.997843, 0.0226442, -0.0244767, 0, -0.022651, 0.998143, 0, 0, 0.0245096, 0.000556201, 0.999699, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 14,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 25.728439331054688,
+        "opacity": "0.9902",
+        "transform": "matrix3d(0.998634, 0.0226622, -0.0147624, 0, -0.0226646, 0.998743, 0, 0, 0.0147734, 0.000335254, 0.999891, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 15,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 25.307693481445312,
+        "opacity": "0.9945",
+        "transform": "matrix3d(0.999109, 0.0226729, -0.00827129, 0, -0.0226737, 0.999143, 0, 0, 0.00827413, 0.000187766, 0.999966, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 16,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 25.02886962890625,
+        "opacity": "0.9972",
+        "transform": "matrix3d(0.999434, 0.0226803, -0.00419973, 0, -0.0226805, 0.999443, 0, 0, 0.00419991, 9.53094e-05, 0.999991, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 17,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 24.83197021484375,
+        "opacity": "0.9992",
+        "transform": "matrix3d(0.999642, 0.022685, -0.00125302, 0, -0.0226851, 0.999643, 0, 0, 0.00125282, 2.84305e-05, 0.999999, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 18,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 24.76087951660156,
+        "opacity": "0.9998",
+        "transform": "matrix3d(0.999743, 0.0226873, -0.000366519, 0, -0.0226873, 0.999743, 0, 0, 0.000366425, 8.31534e-06, 1, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  },
+  {
+    "direction": 2,
+    "sample": 19,
+    "case": "swift",
+    "faces": [
+      {
+        "case": "0",
+        "gap": 24.74745178222656,
+        "opacity": "0.9999",
+        "transform": "matrix3d(0.999743, 0.0226873, -7.85398e-05, 0, -0.0226873, 0.999743, 0, 0, 7.85196e-05, 1.78186e-06, 1, 0, 0, 0, 0, 1)"
+      }
+    ],
+    "href": "sample-swift.html#mileage",
+    "inert": true,
+    "turning": "true"
+  }
+]

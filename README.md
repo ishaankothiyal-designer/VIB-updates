@@ -1,31 +1,41 @@
 # VIB V5 — The car’s paper trail
 
-Full website requested24November2026, based on the user-selected A2 direction. V4 and the creative studies are preserved. Separate private Sites project; identity in .openai/hosting.json.
+Current: 25 November 2026. Existing private Site: https://vib-v5.cars24.chatgpt.site/ . Identity and static output configuration live in `.openai/hosting.json`; preserve audience and project ID. V4 and earlier design studies remain separate and unchanged.
 
-Buildless HTML/CSS/JS. `python3 -m http.server 4335 --directory dist` from this folder. Routes: homepage, sample.html, guide.html and three static guide articles. Legacy guide?topic links resolve to matching static articles. No dependency install or build required.
+## Build and preview
 
-## Experience
+Buildless HTML/CSS/JavaScript with Python generators. Run `python3 build_reports.py` to rebuild the homepage, ten report routes, generic sample entry and routing script. Serve `dist/` locally, for example `python3 -m http.server 4336 --directory dist`. Sixteen HTML files comprise the homepage, ten car reports, generic sample entry and four guide routes.
 
-A2's layered report hero and one consequential mileage finding lead into dated evidence, a native filing-style coverage index, contextual process, FAQs, reading-room guides and closing report action. Shared navy/gold, Libre/Plex, paper surfaces and original VIB blue object artwork. Sample report is one ruled folio; guides use topic filing tabs, paper reading surfaces and a contextual return to report evidence. Factual limits remain native text.
+`dist/cars.json` is the canonical authored mock dataset. Scores are preset, and photographs are separate model-matched listing references. No live lookup, payment, score calculation or production provider integration is implemented. Keep record dates at their fixture values; rebuilding is not a data refresh.
 
-`base.css` owns shared foundations/header/footer; `home.css` the A2/full homepage; `paper-report.css` the report theme above retained native report styles; `guide.css` the reading pages. `app.js` owns menus/process/chart/legacy routes; `motion.js` only enhances motion. Locally vendored GSAP/ScrollTrigger3.15.1. Motion preference persists across same-origin pages; native preference wins. See motion-plan.md.
+## Current report system
 
-## Verification
+All ten reports use the minimal Swift report system: selected-photo gallery, four thumbnails and full-screen keyboard viewer; overview, eight story chapters, evidence surfaces, sources and seller questions. `build_swift_report.py` owns the original Swift story and generic no-script fallback. `build_issue_reports.py` builds the other nine with vehicle-specific facts and a lead story. `swift_mileage.py` derives graph dates, ticks, count, scale and controls from each fixture; the i20 service path stops at its actual last invoice rather than filling the missing years.
 
-`python3 check.py` validates six HTML routes, local assets, fragment/ARIA targets and all27preserved V4files. Node syntax checks app.js/motion.js. Rendered checks at320/390/768/1440 on all six pages: no document overflow; all images loaded. Tested mobile menu/Escape focus, native coverage disclosure, process activation, report section disclosure and anchor clearance, seventh mileage selector/readout, guide-to-finance return, legacyguide redirect, reduced motion immediate style cleanup and cross-route persistence. Source/copy review under qa/. Before publication final pushed source is packaged by Sites helper.
+`dist/swift-report.css` owns shared report styling and responsive sticky introductions. `dist/swift-report.js` owns galleries, the accessible mileage slider, chapter progress and finite evidence arrival. `base.css` owns shared foundations/header/footer. Typography remains Libre Baskerville/IBM Plex Sans with the VIB navy, paper and restrained gold palette.
 
-Synthetic2020Swift records, sample amount/date facts and illustrative64score retained. No live lookup, authentication, payments, production scoring, provider connection or Figma changes. Physicaldevice,screenreader,200%zoom and participant testing not performed. Native OS preference switch was source/isolatedlogic checked, not emulated in browser.
+## Homepage motion
 
-Skill traceability and the24November Higgsfield follow-up: `skills-integration.md` and `asset-provenance.json`. Bespoke records/inspection illustration follows the original blue family on the inspection guide and homepage reading-room link. Hallmark full workflow and a fresh motion.so study are not claimed.
+`build_home.py` and `hero_deck.py` compose the bounded homepage. No visible car catalogue or report picker: generic sample actions use a shuffled ten-car session cycle; explicit evidence links remain fixed. `hero-deck.js/css` owns the automatic three-car stack with matching CTA below. Each transition finishes the outgoing front face, commits the new case/link together and then reveals its front face. Back faces are removed and backing papers are decorative/stationary. Rapid Next requests serialize; pause, resize, visibility and preference interruptions settle to a complete case. Reduced motion retains static manual selection. Existing contents/process scroll stories remain in `scroll-stories.js`; shared preference owner is `motion.js`.
 
-## Ten-car report collection — 24 November
+## Validation
 
-Current data is `dist/cars.json`. Rebuild with `python3 build_reports.py`; validate with `python3 check-fixtures.py` and `python3 check.py`. Ten static report routes plus default Swift; homepage browses five at a time. Forty model-matched listing reference photographs, native photo dialog, consistent chart/table/timeline records. Scores are preset sample values, not production calculations. Detailed source, copy, refresh and QA record: `car-files-update-2026-11-24.md`.
+Run:
 
-## Minimal cards and background sample rotation — latest
+```
+python3 check.py
+python3 check-fixtures.py
+python3 check-swift-review.py
+python3 check-mileage-deck.py
+python3 check-issue-reports.py
+python3 check-all-reports.py
+node check-router.mjs
+node --check dist/hero-deck.js
+node --check dist/swift-report.js
+```
 
-The visible car catalogue and report picker were removed at the user’s request. `build_home.py` now owns the bounded homepage presentation. `build_reports.py` rebuilds the ten static reports and emits the sample router from `dist/cars.json`. Generic sample actions use a shuffled session cycle; explicit Swift evidence links remain fixed. Do not restore the five-car collection from the earlier template. `minimal-cards-review-2026-11-24.md` maps all ten browser comments to changes and QA.
+The checks cover routes/assets/fragment/ARIA targets, original forty photo hashes, variable service histories, exact fixture facts and dates, scores, chapter/lead/question contracts, sample routing and protected lower homepage/assets/V4 scope. Dated scope baselines are historical; later allowlists record explicitly expanded report work. Rendered UAT, interruption cases and limitations are recorded under `docs/uat/2026-11-25-all-reports/`; these checks are not physical-device or assistive-technology certification.
 
-## Swift report — focused review
+## Historical records
 
-`sample-swift.html` now has its own minimal report treatment and richer gallery. Run `python3 build_swift_report.py` to rebuild only Swift; the full generator also invokes it last. The other nine reports retain their current designs. Review record: `swift-report-review-2026-11-24.md`. `python3 check-swift-review.py` checks content/gallery contracts and the dated non-Swift scope baseline.
+Earlier explorations and source/generation provenance remain in `skills-integration.md`, `asset-provenance.json`, the two newer illustration provenance files, and dated review documents. `swift-report-review-2026-11-24.md`, `REVIEW-MILEAGE-DECK-2026-11-24.md` and `REVIEW-ISSUE-REPORTS-2026-11-25.md` describe previous releases. They do not supersede the current all-report scope or the user’s animation defect report.

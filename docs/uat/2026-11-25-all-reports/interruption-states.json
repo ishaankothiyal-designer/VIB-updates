@@ -1,0 +1,22 @@
+[
+  {
+    "case": "brezza",
+    "disabled": false,
+    "test": "resize during queued turns",
+    "turning": "false",
+    "visible": 1
+  },
+  {
+    "autoplay": "paused",
+    "case": "swift",
+    "test": "pause during turn",
+    "turning": "false",
+    "visible": 1
+  },
+  {
+    "motion": "reduced",
+    "test": "preference during turn",
+    "turning": "false",
+    "visible": 1
+  }
+]

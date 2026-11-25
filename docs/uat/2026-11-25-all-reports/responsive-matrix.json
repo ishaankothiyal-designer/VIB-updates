@@ -1,0 +1,290 @@
+[
+  {
+    "id": "swift",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Maruti Suzuki Swift LXI",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "baleno",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Maruti Suzuki Baleno Alpha Petrol 1.2",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "city",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Honda City 1.5L i-VTEC VX",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "creta",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Hyundai Creta SX Executive 1.5 Petrol",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "nexon",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Tata Nexon Creative Plus S 1.2 Revotron 6 MT",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "i20",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Hyundai Elite i20 Asta 1.2",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "venue",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Hyundai Venue SX 1.0 Turbo iMT",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "brezza",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Maruti Suzuki Vitara Brezza VDI (O)",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "tiago",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Tata Tiago XT Petrol",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "amaze",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Honda Amaze 1.2L i-VTEC VX",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "id": "swift",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Maruti Suzuki Swift LXI",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "baleno",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Maruti Suzuki Baleno Alpha Petrol 1.2",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "city",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Honda City 1.5L i-VTEC VX",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "creta",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Hyundai Creta SX Executive 1.5 Petrol",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "nexon",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Tata Nexon Creative Plus S 1.2 Revotron 6 MT",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "i20",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Hyundai Elite i20 Asta 1.2",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "venue",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Hyundai Venue SX 1.0 Turbo iMT",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "brezza",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Maruti Suzuki Vitara Brezza VDI (O)",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "tiago",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Tata Tiago XT Petrol",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "amaze",
+    "broken": 0,
+    "chapterSticky": "static",
+    "h1": "Honda Amaze 1.2L i-VTEC VX",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "id": "swift",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Maruti Suzuki Swift LXI",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "baleno",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Maruti Suzuki Baleno Alpha Petrol 1.2",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "city",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Honda City 1.5L i-VTEC VX",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "creta",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Hyundai Creta SX Executive 1.5 Petrol",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "nexon",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Tata Nexon Creative Plus S 1.2 Revotron 6 MT",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "i20",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Hyundai Elite i20 Asta 1.2",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "venue",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Hyundai Venue SX 1.0 Turbo iMT",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "brezza",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Maruti Suzuki Vitara Brezza VDI (O)",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "tiago",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Tata Tiago XT Petrol",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "amaze",
+    "broken": 0,
+    "chapterSticky": "sticky",
+    "h1": "Honda Amaze 1.2L i-VTEC VX",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "id": "home",
+    "broken": 0,
+    "ctaGap": 27,
+    "height": 844,
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "id": "home",
+    "broken": 0,
+    "ctaGap": 27,
+    "height": 896,
+    "overflow": false,
+    "width": 414
+  },
+  {
+    "id": "home",
+    "broken": 0,
+    "ctaGap": 30,
+    "height": 900,
+    "overflow": false,
+    "width": 834
+  },
+  {
+    "id": "home",
+    "broken": 0,
+    "ctaGap": 30,
+    "height": 800,
+    "overflow": false,
+    "width": 1280
+  },
+  {
+    "id": "home",
+    "broken": 0,
+    "ctaGap": 30,
+    "height": 1000,
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "id": "home",
+    "broken": 0,
+    "ctaGap": 30,
+    "height": 390,
+    "overflow": false,
+    "width": 844
+  }
+]
