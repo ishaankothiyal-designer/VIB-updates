@@ -1,4 +1,4 @@
-# VIB V5 — The car’s paper trail
+# VIB updates — The car’s paper trail
 
 Current: 25 November 2026. Existing private Site: https://vib-v5.cars24.chatgpt.site/ . Identity and static output configuration live in `.openai/hosting.json`; preserve audience and project ID. V4 and earlier design studies remain separate and unchanged.
 
@@ -39,3 +39,16 @@ The checks cover routes/assets/fragment/ARIA targets, original forty photo hashe
 ## Historical records
 
 Earlier explorations and source/generation provenance remain in `skills-integration.md`, `asset-provenance.json`, the two newer illustration provenance files, and dated review documents. `swift-report-review-2026-11-24.md`, `REVIEW-MILEAGE-DECK-2026-11-24.md` and `REVIEW-ISSUE-REPORTS-2026-11-25.md` describe previous releases. They do not supersede the current all-report scope or the user’s animation defect report.
+
+## GitHub collaboration and public preview
+
+Public repository: https://github.com/ishaankothiyal-designer/VIB-updates . Created 25 November 2026 from the latest V5 source and its existing history.
+
+- `main`: initial shared baseline.
+- `ishaan-staging`: Ishaan’s active working branch; pushes deploy `dist/` to GitHub Pages.
+- `pankaj-staging`: Pankaj’s staging branch, created from the same initial baseline.
+- `vikas-staging`: Vikas’s staging branch, created from the same initial baseline.
+
+Public preview: https://ishaankothiyal-designer.github.io/VIB-updates/ . Changes from the other staging branches reach this preview after merging into `ishaan-staging`. The GitHub Pages workflow publishes the checked-in static output; run the Python generator when changing templates or fixtures. Existing private Sites hosting retains its separate configuration and audience. The public preview contains illustrative sample vehicle records, with no live lookup or production scoring.
+
+Git branch names use hyphens because spaces are unsupported. All three staging branches began at the same commit, so no history rewrite was needed. Collaborator invitations await the owner’s supplied GitHub accounts.
