@@ -3,3 +3,7 @@ qa/
 .DS_Store
 
 __pycache__/
+
+# Local setup and private verification evidence
+.venv/
+.agent/

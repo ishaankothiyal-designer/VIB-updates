@@ -1,54 +1,82 @@
-# VIB updates — The car’s paper trail
+# VIB website local preview
 
-Current: 25 November 2026. Existing private Site: https://vib-v5.cars24.chatgpt.site/ . Identity and static output configuration live in `.openai/hosting.json`; preserve audience and project ID. V4 and earlier design studies remain separate and unchanged.
+This is a static vehicle-history **sample preview**, based on `vikas-staging` at `64187cf`. The local review changes are on `codex/vib-user-experience`.
 
-## Build and preview
+The preview uses ten fictional vehicle histories, preset example scores and forty model-matched reference photographs. It has no live registration lookup, payment integration, coverage verification or production score calculation. Rebuilding does not refresh the fixture dates or fetch new customer data.
 
-Buildless HTML/CSS/JavaScript with Python generators. Run `python3 build_reports.py` to rebuild the homepage, ten report routes, generic sample entry and routing script. Serve `dist/` locally, for example `python3 -m http.server 4336 --directory dist`. Sixteen HTML files comprise the homepage, ten car reports, generic sample entry and four guide routes.
+## Run locally
 
-`dist/cars.json` is the canonical authored mock dataset. Scores are preset, and photographs are separate model-matched listing references. No live lookup, payment, score calculation or production provider integration is implemented. Keep record dates at their fixture values; rebuilding is not a data refresh.
+You need Python 3 with venv/pip. The current local setup was verified with Python 3.14. Node.js is only needed to run JavaScript validation; the site itself needs no Node server or npm installation.
 
-## Current report system
-
-All ten reports use the minimal Swift report system: selected-photo gallery, four thumbnails and full-screen keyboard viewer; overview, eight story chapters, evidence surfaces, sources and seller questions. `build_swift_report.py` owns the original Swift story and generic no-script fallback. `build_issue_reports.py` builds the other nine with vehicle-specific facts and a lead story. `swift_mileage.py` derives graph dates, ticks, count, scale and controls from each fixture; the i20 service path stops at its actual last invoice rather than filling the missing years.
-
-`dist/swift-report.css` owns shared report styling and responsive sticky introductions. `dist/swift-report.js` owns galleries, the accessible mileage slider, chapter progress and finite evidence arrival. `base.css` owns shared foundations/header/footer. Typography remains Libre Baskerville/IBM Plex Sans with the VIB navy, paper and restrained gold palette.
-
-## Homepage motion
-
-`build_home.py` and `hero_deck.py` compose the bounded homepage. No visible car catalogue or report picker: generic sample actions use a shuffled ten-car session cycle; explicit evidence links remain fixed. `hero-deck.js/css` owns the automatic three-car stack with matching CTA below. Each transition finishes the outgoing front face, commits the new case/link together and then reveals its front face. Back faces are removed and backing papers are decorative/stationary. Rapid Next requests serialize; pause, resize, visibility and preference interruptions settle to a complete case. Reduced motion retains static manual selection. Existing contents/process scroll stories remain in `scroll-stories.js`; shared preference owner is `motion.js`.
-
-## Validation
-
-Run:
-
-```
-python3 check.py
-python3 check-fixtures.py
-python3 check-swift-review.py
-python3 check-mileage-deck.py
-python3 check-issue-reports.py
-python3 check-all-reports.py
-node check-router.mjs
-node --check dist/hero-deck.js
-node --check dist/swift-report.js
+```bash
+cd /Users/a40811/Documents/second-brain/10-Projects/vib-website
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python dev.py
 ```
 
-The checks cover routes/assets/fragment/ARIA targets, original forty photo hashes, variable service histories, exact fixture facts and dates, scores, chapter/lead/question contracts, sample routing and protected lower homepage/assets/V4 scope. Dated scope baselines are historical; later allowlists record explicitly expanded report work. Rendered UAT, interruption cases and limitations are recorded under `docs/uat/2026-11-25-all-reports/`; these checks are not physical-device or assistive-technology certification.
+Open **http://127.0.0.1:4336/** in Chrome. Stop the server with Ctrl+C. If the port is occupied, run `python dev.py --port 4337` and open the port printed by the command.
 
-## Historical records
+`dev.py` rebuilds the pages and serves only `dist/`, bound to localhost. It does not publish anything, read cloud credentials or expose the repository's private task evidence. It has no automatic rebuild watcher: after editing generators, run `python build_reports.py` or restart `dev.py`, then refresh Chrome.
 
-Earlier explorations and source/generation provenance remain in `skills-integration.md`, `asset-provenance.json`, the two newer illustration provenance files, and dated review documents. `swift-report-review-2026-11-24.md`, `REVIEW-MILEAGE-DECK-2026-11-24.md` and `REVIEW-ISSUE-REPORTS-2026-11-25.md` describe previous releases. They do not supersede the current all-report scope or the user’s animation defect report.
+You can also serve the checked-in output without installing build dependencies:
 
-## GitHub collaboration and public preview
+```bash
+python3 -m http.server 4336 --bind 127.0.0.1 --directory dist
+```
 
-Public repository: https://github.com/ishaankothiyal-designer/VIB-updates . Created 25 November 2026 from the latest V5 source and its existing history.
+## Build and check
 
-- `main`: initial shared baseline.
-- `ishaan-staging`: Ishaan’s active working branch; pushes deploy `dist/` to GitHub Pages.
-- `pankaj-staging`: Pankaj’s staging branch, created from the same initial baseline.
-- `vikas-staging`: Vikas’s staging branch, created from the same initial baseline.
+```bash
+source .venv/bin/activate
+python build_reports.py
+python verify.py
+```
 
-Public preview: https://ishaankothiyal-designer.github.io/VIB-updates/ . Changes from the other staging branches reach this preview after merging into `ishaan-staging`. The GitHub Pages workflow publishes the checked-in static output; run the Python generator when changing templates or fixtures. Existing private Sites hosting retains its separate configuration and audience. The public preview contains illustrative sample vehicle records, with no live lookup or production scoring.
+`verify.py` rebuilds, runs the journey/metadata regression tests, validates all sixteen HTML routes and their assets/fragments/ARIA targets, checks all ten report histories and forty photo hashes, tests predictable sample routing and checks the syntax of every first-party JavaScript file in `dist/`. Node.js must be on PATH for these JavaScript checks (local validation used Node 26.13.1).
 
-Git branch names use hyphens because spaces are unsupported. All three staging branches began at the same commit, so no history rewrite was needed. Collaborator invitations await the owner’s supplied GitHub accounts.
+The dated `check-swift-review.py`, `check-mileage-deck.py` and `check-issue-reports.py` scripts preserve constraints from earlier, narrower design reviews. They intentionally freeze sections changed by this user-experience revision and are historical checks, not the current acceptance command. They remain available with their source records. `check.py --v4-root /actual/path/to/website-v4/dist` can additionally validate V4 only when that separate source exists; this repository does not contain it.
+
+Browser checks are separate from these source checks. Local Chrome screenshots and results are private under `.agent/uat/`. They cover all ten report covers at 390px and 1440px, the changed homepage and selected shared interactions. Physical devices, complete assistive-technology validation and field performance are not certified by these checks.
+
+## What changed for visitors
+
+- An explicit preview proposition and stable sample action before the large hero illustration.
+- A concern-led sample chooser, plus a native expandable list of all ten named cars. Sample choices work as ordinary links without JavaScript.
+- Swift labelled as a specific example rather than implied eligibility. Actual service coverage is not promised.
+- Each report-contents topic keeps its explanation with its expandable sample evidence. The detached pinned story layer is removed.
+- A short three-step follow-up checklist rather than another long card story.
+- Fictional-history context at the top of every report, reference-photo labels beside galleries and preset-score context beside scores.
+- Generic sample URLs consistently open the Swift example; explicit car/fragment links retain their destination. No random report cycle or session storage is needed for routing.
+- Hero autoplay starts paused; readers can play it or move to the next car. The global reduced-motion control appears near the first animation and retains its existing system-preference behavior.
+- Shared navigation returns visitors to the sample chooser. The timeline is described as available records rather than a complete history.
+
+## Source map
+
+- `build_reports.py`: full generation entry point.
+- `build_home.py`, `hero_deck.py`: homepage content and three-car illustrated deck.
+- `build_swift_report.py`, `build_issue_reports.py`, `swift_mileage.py`: report content, individual lead stories and graphs.
+- `site_content.py`: shared navigation, sample disclosures and metadata after report generation.
+- `dist/cars.json`: canonical authored fixture data. Preserve its facts, dates and photo provenance unless a data change is explicitly intended.
+- `dist/journey.css`: the user-experience revision using the existing navy, paper, Libre and Plex system.
+- `dist/base.css`, `dist/swift-report.css`: existing foundations and report presentation.
+- `dist/hero-deck.js`, `dist/swift-report.js`, `dist/motion.js`: hero transitions, report controls and the preference-aware motion owner.
+- `data/sample-router-template.js`: legacy sample-entry behavior.
+- `tests/`, `verify.py`: current regression and verification entry points.
+
+The report generators first compose the original templates, then the Swift report, then the nine issue-led reports. `site_content.py` applies shared context last. Update generator sources and rebuild; do not hand-edit generated report HTML because the next build replaces it. Shared CSS/JS under `dist/` are authored sources, not bundled output.
+
+## Deployment configuration
+
+The GitHub Pages workflow at `.github/workflows/deploy-pages.yml` publishes checked-in `dist/` on pushes to **`ishaan-staging`**, or an explicit manual workflow run. It does not run the Python generator. The repository also has `main`, `pankaj-staging` and `vikas-staging`; a branch name alone is not a deployed environment. This task did not push, merge, run the workflow or change deployment settings.
+
+`.openai/hosting.json` separately identifies the existing private Sites project and its `dist/` directory. Its project identity and audience have not been changed.
+
+If an approved public launch base is available, supply it at build time:
+
+```bash
+VIB_SITE_URL=https://your-approved-domain.example/ python build_reports.py
+```
+
+The base must be HTTPS, without a query or fragment. A project subpath is supported. This writes absolute canonical/Open Graph URLs; without it, local builds have no invented canonical domain. Rebuilding without the variable removes earlier deployment URLs. The website has no need for an `.env` file, API key or secret to run locally. Domain selection, policy pages, real provider coverage and production report fulfillment still need their owning teams.

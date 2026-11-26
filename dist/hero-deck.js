@@ -2,7 +2,7 @@
 (()=>{
  'use strict';const payload=document.getElementById('hero-case-data');if(!payload)return;
  const cases=JSON.parse(payload.textContent),region=document.querySelector('.case-deck-region'),cards=[...document.querySelectorAll('.case-card')],pause=document.querySelector('.case-pause'),next=document.querySelector('.case-next'),link=document.getElementById('case-report-action'),progress=document.querySelector('.case-progress span'),G=window.gsap;
- let current=0,target=0,pending=null,turn=null,timer=0,progressTween=null,userPaused=false,inView=false,hovered=false,focused=false;
+ let current=0,target=0,pending=null,turn=null,timer=0,progressTween=null,userPaused=true,inView=false,hovered=false,focused=false;
  const reduced=()=>document.documentElement.dataset.motion==='reduced'||matchMedia('(prefers-reduced-motion: reduce)').matches;
  region.classList.add('deck-enhanced');
  function pose(card,visible){if(G)G.set(card,{x:0,y:0,z:0,rotationY:0,rotationZ:reduced()?0:1.3,scale:1,opacity:visible?1:0,visibility:visible?'visible':'hidden'});else{card.style.visibility=visible?'visible':'hidden';card.style.opacity=visible?'1':'0';}card.style.zIndex=visible?'2':'0';}

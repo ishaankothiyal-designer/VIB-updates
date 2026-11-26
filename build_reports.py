@@ -96,3 +96,7 @@ build_swift_report()
 # Issue-led reviews share the approved Swift report system.
 from build_issue_reports import build_issue_reports
 build_issue_reports()
+
+# Apply shared preview disclosures and predictable navigation to every generated route.
+from site_content import apply_shared_content
+apply_shared_content()
