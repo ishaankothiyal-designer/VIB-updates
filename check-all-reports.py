@@ -31,8 +31,8 @@ for c in cars:
  for p in c['photos']:assert hashlib.sha256((D/p['src']).read_bytes()).hexdigest()==p['sha256']
  dates=[t['datetime'] for t in s.select('.swift-timeline time')];assert dates==sorted(dates)
  assert '2025-02-12' not in dates and '2026-10-14' not in dates
- assert 'histories, amounts and outcomes are fictional' in txt and 'model-matched CARS24 reference car' in txt
-base=json.loads((B/'data/all-reports-baseline-2026-11-25.json').read_text());allowed={'guide.html','guide-mileage.html','guide-finance.html','guide-inspection.html','sample-router.js','index.html','sample.html','swift-report.css','swift-report.js','hero-deck.css','hero-deck.js',*('sample-'+c['id']+'.html' for c in cars)}
+ assert 'histories, amounts and outcomes are fictional' in txt and 'model-matched reference car' in txt
+base=json.loads((B/'data/all-reports-baseline-2026-11-25.json').read_text());allowed={'motion.js','scroll-stories.js','guide.html','guide-mileage.html','guide-finance.html','guide-inspection.html','sample-router.js','index.html','sample.html','swift-report.css','swift-report.js','hero-deck.css','hero-deck.js',*('sample-'+c['id']+'.html' for c in cars)}
 for file,h in base.items():
  if file not in allowed:assert hashlib.sha256((D/file).read_bytes()).hexdigest()==h,file
 print('PASS: all ten reports; exact fixtures/photos/scores; own story/question; variable reading counts/date bounds; no invented transfer/closure dates; no-claim/closure/gap branches; protected assets and dataset.')

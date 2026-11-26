@@ -15,6 +15,8 @@ def main():
         [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v'],
         *[[sys.executable, script] for script in ['check.py','check-fixtures.py','check-all-reports.py']],
         [node, 'check-router.mjs'],
+        [node, 'check-entry-motion.mjs'],
+        [node, 'check-carousel.mjs'],
         *[[node,'--check',str(script.relative_to(ROOT))] for script in sorted((ROOT/'dist').glob('*.js'))],
     ]
     for command in commands:

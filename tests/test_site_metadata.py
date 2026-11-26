@@ -46,7 +46,8 @@ class SharedContentTests(unittest.TestCase):
             for selector in ['.sample-notice','.photo-reference-note','.score-context']:
                 self.assertEqual(len(report.select(selector)),1,selector)
             home=BeautifulSoup((root/'dist/index.html').read_text(),'html.parser')
-            self.assertEqual(len(home.select('.hero-motion')),1)
+            self.assertEqual(len(home.select('.hero-motion')),0)
+            self.assertEqual(len(home.select('[data-motion-toggle]')),1)
             self.assertEqual(len(home.select('[data-motion-toggle]')),1)
 
     def test_report_missing_required_structure_fails_with_useful_error(self):

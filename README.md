@@ -2,7 +2,7 @@
 
 This is a static vehicle-history **sample preview**, based on `vikas-staging` at `64187cf`. The local review changes are on `codex/vib-user-experience`.
 
-The preview uses ten fictional vehicle histories, preset example scores and forty model-matched reference photographs. It has no live registration lookup, payment integration, coverage verification or production score calculation. Rebuilding does not refresh the fixture dates or fetch new customer data.
+The preview uses ten fictional vehicle histories, preset example scores and forty model-matched reference photographs. It has no embedded live registration lookup, payment integration, coverage verification or production score calculation. “Check your vehicle” stays on-page and opens the registration entry. The interactive widget validates basic input shape only, normalizes spacing/case and displays an explicit preview message. It sends no lookup, OTP or payment requests and stores no registration. It must be connected and tested before customer launch. Rebuilding does not refresh the fixture dates or fetch new customer data.
 
 ## Run locally
 
@@ -80,3 +80,17 @@ VIB_SITE_URL=https://your-approved-domain.example/ python build_reports.py
 ```
 
 The base must be HTTPS, without a query or fragment. A project subpath is supported. This writes absolute canonical/Open Graph URLs; without it, local builds have no invented canonical domain. Rebuilding without the variable removes earlier deployment URLs. The website has no need for an `.env` file, API key or secret to run locally. Domain selection, policy pages, real provider coverage and production report fulfillment still need their owning teams.
+
+## Current motion and launch status
+The screenshot-selected paper stack is restored on desktop widths1024px+ and heights720px+. Matching card selection uses current text geometry for forward/reverse/fast scroll; transitions are240ms. Mobile, short viewports, reduced motion and missing GSAP retain original paired evidence in normal reading order. Visual companion clones are decorative and inert.
+
+This is a locally verified frontend candidate, not a production vehicle-check service. Launch blockers: real registration/OTP/report availability/payment/delivery integration and end-to-end acceptance; final policies and supported commercial claims; target-host security headers/CSP, accessibility assistive-technology/device tests and field performance validation. No production readiness certification or deployment is implied.
+
+## Homepage consistency across all pages
+All16static routes receive shared navigation,footer and final design tokens through site_content.py,including content fingerprints for journey.css and refinements.css. Reports retain their data-specific chapter structure; guide contents are native links on mobile as well as desktop.15Python regression tests plus controller/route/data checks are in verify.py. Latest local visual/interaction scope and remaining launch gaps: design-qa.md.
+
+## Final local presentation, 26 November 2026
+Latest owner-approved direction: compact navy/gold opening using repository copy, neutral multi-vehicle folio; separate warm ivory plate-style registration; original pale-blue editorial headings and desktop scroll stack. The intermediate literal-glass and topic-tab versions are superseded. All16routes share navigation/footer/design layer. Real service integration remains intentionally deferred. Current acceptance: .agent/uat/final-presentation/coverage.json and .agent/final-verify.txt. Open http://localhost:4336/index.html with the existing server; do not start a second server on the same port.
+
+## UX audit and fixes
+Current audit report: reports/ux-visual-audit-2026-11-26.html. It embeds10screenshots and needs no image folder or login when shared as a file. It is not publicly hosted. Registration error recovery, supporting-note hierarchy, compact report context and heading word separation were corrected. Current source checks pass15Python tests plus all existing resource/data/photo/router/controller checks.
