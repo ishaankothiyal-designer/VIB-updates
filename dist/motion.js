@@ -17,7 +17,7 @@
     else root.style.removeProperty('scroll-behavior');
     if (motionControl) {
       motionControl.hidden = false;
-      motionControl.textContent = reduced ? 'Reduce motion: on' : 'Reduce motion: off';
+      motionControl.textContent = reduced ? 'Animations reduced' : 'Reduce animations';
       motionControl.setAttribute('aria-pressed', String(reduced));
       motionControl.disabled = reduceMotion.matches;
     }
