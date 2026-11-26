@@ -69,7 +69,7 @@ The report generators first compose the original templates, then the Swift repor
 
 ## Deployment configuration
 
-The GitHub Pages workflow at `.github/workflows/deploy-pages.yml` publishes checked-in `dist/` on pushes to **`ishaan-staging`**, or an explicit manual workflow run. It does not run the Python generator. The repository also has `main`, `pankaj-staging` and `vikas-staging`; a branch name alone is not a deployed environment. This task did not push, merge, run the workflow or change deployment settings.
+The existing public website is https://vib-updates.vercel.app/ . Vercel hosts checked-in `dist/` using the existing `vercel.json` configuration. The repository hosting migration identifies **`ishaan-staging`** as the Production Branch. `main` is the shared baseline; `vikas-staging` and `pankaj-staging` are review branches. The retired GitHub Pages workflow stays removed. The final presentation handoff targets `vikas-staging` only; no merge to main or the production branch, manual deployment, or hosting-setting change is authorized.
 
 `.openai/hosting.json` separately identifies the existing private Sites project and its `dist/` directory. Its project identity and audience have not been changed.
 

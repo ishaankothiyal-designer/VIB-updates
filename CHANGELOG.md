@@ -61,3 +61,6 @@ Removed nested input focus rectangle; kept one outer plate indicator and visible
 - Compacted the mobile sample notice while retaining fictional history/amount and preset-score labels.
 - Separated heading words acrossbrwithout adding duplicate spaces to vehicle names; regression coverage included.
 -15Python/fullsource checks passed;32desktop/mobileviews plus320px edge cases; ten-report and three-guide interactions checked. HTML report with10embedded screenshots verified in Chrome. Local only.
+
+### 2026-11-26 — Review handoff alignment
+Inherited the existing main-branch Vercel hosting migration into the review branch. Preserved its vercel.json and .vercelignore exactly; kept the retired Pages workflow removed. Combined local/private ignore rules with main. Updated hosting documentation. No new hosting configuration or production deployment.

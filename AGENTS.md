@@ -22,4 +22,4 @@ Run `verify.py`, inspect changed routes in the owner's Chrome at mobile and desk
 
 ## Boundaries
 
-Do not change `.openai/hosting.json`, hosting access or deployment workflow without explicit authorization. GitHub Pages deploys checked-in `dist/` on `ishaan-staging` pushes. Local changes are for owner review; do not push/create PR/merge/deploy without approval. `.agent/` and `.venv/` are ignored private/runtime state.
+Do not change `.openai/hosting.json`, hosting access or deployment workflow without explicit authorization. The existing Vercel setup deploys checked-in `dist/`; the hosting migration identifies `ishaan-staging` as the Production Branch. Preserve `vercel.json` and `.vercelignore`. Local changes are for owner review; do not push/create PR/merge/deploy without approval. `.agent/` and `.venv/` are ignored private/runtime state.
