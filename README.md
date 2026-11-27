@@ -1,6 +1,8 @@
-# VIB website local preview
+# VIB website — V6
 
-This is a static vehicle-history **sample preview**, based on `vikas-staging` at `64187cf`. The local review changes are on `codex/vib-user-experience`.
+V6 merges Vikas’s `vikas-staging` through `5d18891`, authorized on 27 November 2026. Latest public version: https://vib-updates.vercel.app/ . Previous V5 is preserved at https://vib-updates.vercel.app/versions/v5/ and Git tag `v5.0.0`; V6 is tagged `v6.0.0`. Release metadata is in `dist/release.json`.
+
+`dist/versions/v5/` is an immutable snapshot of the published `47b8bcd` output. The generator rebuilds only the current root routes; keep the version archive intact.
 
 The preview uses ten fictional vehicle histories, preset example scores and forty model-matched reference photographs. It has no embedded live registration lookup, payment integration, coverage verification or production score calculation. “Check your vehicle” stays on-page and opens the registration entry. The interactive widget validates basic input shape only, normalizes spacing/case and displays an explicit preview message. It sends no lookup, OTP or payment requests and stores no registration. It must be connected and tested before customer launch. Rebuilding does not refresh the fixture dates or fetch new customer data.
 
@@ -9,7 +11,7 @@ The preview uses ten fictional vehicle histories, preset example scores and fort
 You need Python 3 with venv/pip. The current local setup was verified with Python 3.14. Node.js is only needed to run JavaScript validation; the site itself needs no Node server or npm installation.
 
 ```bash
-cd /Users/a40811/Documents/second-brain/10-Projects/vib-website
+cd /path/to/VIB-updates
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -69,7 +71,7 @@ The report generators first compose the original templates, then the Swift repor
 
 ## Deployment configuration
 
-The existing public website is https://vib-updates.vercel.app/ . Vercel hosts checked-in `dist/` using the existing `vercel.json` configuration. The repository hosting migration identifies **`ishaan-staging`** as the Production Branch. `main` is the shared baseline; `vikas-staging` and `pankaj-staging` are review branches. The retired GitHub Pages workflow stays removed. The final presentation handoff targets `vikas-staging` only; no merge to main or the production branch, manual deployment, or hosting-setting change is authorized.
+The existing public website is https://vib-updates.vercel.app/ . Vercel hosts checked-in `dist/` using the existing `vercel.json` configuration. The repository hosting migration identifies **`ishaan-staging`** as the Production Branch. `main` is the shared baseline; `vikas-staging` and `pankaj-staging` are review branches. The retired GitHub Pages workflow stays removed. The earlier presentation handoff targeted `vikas-staging` only. On 27 November 2026, the owner authorized merging Vikas’s branch as a new version; V6 is released through `ishaan-staging` using the existing Vercel integration.
 
 `.openai/hosting.json` separately identifies the existing private Sites project and its `dist/` directory. Its project identity and audience have not been changed.
 

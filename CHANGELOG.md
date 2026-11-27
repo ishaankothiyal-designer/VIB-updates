@@ -1,3 +1,7 @@
+# V6 — 27 November 2026
+
+Owner-authorized merge of `vikas-staging` through `5d18891` into `ishaan-staging`. Includes Vikas’s homepage presentation, local registration preview, predictable sample selection, report disclosures, shared styling and UX audit fixes. Previous V5 output from `47b8bcd` is preserved byte-for-byte under `dist/versions/v5/`. Existing Vercel configuration and vehicle fixtures are unchanged.
+
 # Change log
 
 ## 2026-11-26

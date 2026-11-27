@@ -1,0 +1,1720 @@
+{
+  "version": 1,
+  "updatedOn": "2026-11-24",
+  "mock": true,
+  "homepageIds": [
+    "swift",
+    "baleno",
+    "city",
+    "creta",
+    "nexon"
+  ],
+  "cars": [
+    {
+      "id": "swift",
+      "mock": true,
+      "sourceListingId": "11291716194",
+      "name": "Maruti Suzuki Swift",
+      "variant": "LXI",
+      "year": 2020,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "bodyType": "Hatchback",
+      "registration": "HR ** ** 7291",
+      "region": "Gurugram, Haryana",
+      "owners": 1,
+      "registeredOn": "2020-07-08",
+      "validUntil": "2035-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-01",
+      "headline": "Mileage needs a second look.",
+      "declaredKm": 58000,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "swift-svc-1",
+          "date": "2021-07-08",
+          "km": 9800,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "swift-svc-2",
+          "date": "2022-07-08",
+          "km": 21750,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "swift-svc-3",
+          "date": "2023-07-08",
+          "km": 29400,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 5700,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "swift-svc-4",
+          "date": "2024-07-08",
+          "km": 46300,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 6350,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "swift-svc-5",
+          "date": "2025-07-08",
+          "km": 58750,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 7000,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "swift-svc-6",
+          "date": "2026-07-08",
+          "km": 72000,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 7650,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": true,
+      "lender": "Vehicle finance entry",
+      "closureDocument": false,
+      "claim": {
+        "amount": 42000,
+        "date": "2023-08-16",
+        "part": "Rear bumper and paint",
+        "status": "Settled"
+      },
+      "challans": [
+        {
+          "id": "CH-01-001",
+          "date": "2025-09-12",
+          "offence": "Parking violation",
+          "amount": 1000,
+          "status": "Unpaid"
+        },
+        {
+          "id": "CH-01-002",
+          "date": "2026-05-18",
+          "offence": "Speeding violation",
+          "amount": 2000,
+          "status": "Unpaid"
+        }
+      ],
+      "pucUntil": "2027-05-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        3.4,
+        3.8
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 440000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 400000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/swift-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/2de96d10-d936-433c-98fa-715e0a27972b/6adb2a81ef461085c3cdfd05/8d1e4dee-416a-426e-a2cb-efc52391c71d/slot/Right_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-swift-2020-cars-noida-11291716194/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "dccfdfcd1fc84c102609884ede91bd52f8d94748eed4e90ef5c9f9e6eb27489c"
+        },
+        {
+          "src": "assets/cars/swift-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/21e9a9b3-838f-42eb-8b05-67c0c8d4e706/6adb2a81ef461085c3cdfd05/7dec9045-8d2d-4c92-ad4c-e17565b91c6f/slot/Right_Back_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-swift-2020-cars-noida-11291716194/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "3316bb525017bb09e0036b307de687a4821548c707eeebe9c10ff782192bd428"
+        },
+        {
+          "src": "assets/cars/swift-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/f9884098-ca34-438e-9962-6d0237be6e6a/6adb2a81ef461085c3cdfd05/17595318-ddb5-4d5b-a9b5-f472c13f69cc/slot/Dashboard_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-swift-2020-cars-noida-11291716194/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "2ec173a63f480f1414ab34b7989360c10b12b37f42e5bbf43e35baf76879466a"
+        },
+        {
+          "src": "assets/cars/swift-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/25b7dfcd-41cc-4cdb-b849-ff8b44d07996/6adb2a81ef461085c3cdfd05/18d059f6-5aef-43cb-ac1e-dae1d1b93f69/slot/Left_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-swift-2020-cars-noida-11291716194/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "902c8a2a5d20b5e3a80da5660cf5f8de8e4051f254216b72a27540a81cc9f8e1"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 64,
+        "label": "Moderate condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": false
+    },
+    {
+      "id": "baleno",
+      "mock": true,
+      "sourceListingId": "32894870179",
+      "name": "Maruti Suzuki Baleno",
+      "variant": "Alpha Petrol 1.2",
+      "year": 2022,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "bodyType": "Hatchback",
+      "registration": "HR ** ** 7428",
+      "region": "Gurugram, Haryana",
+      "owners": 1,
+      "registeredOn": "2022-07-08",
+      "validUntil": "2037-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-02",
+      "headline": "A steady service trail.",
+      "declaredKm": 43800,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "baleno-svc-1",
+          "date": "2022-07-08",
+          "km": 8200,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "baleno-svc-2",
+          "date": "2023-07-08",
+          "km": 16400,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "baleno-svc-3",
+          "date": "2024-07-08",
+          "km": 24600,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 5700,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "baleno-svc-4",
+          "date": "2025-07-08",
+          "km": 32800,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 6350,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "baleno-svc-5",
+          "date": "2026-07-08",
+          "km": 41000,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 7000,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": false,
+      "lender": "Vehicle finance entry",
+      "closureDocument": false,
+      "claim": null,
+      "challans": [],
+      "pucUntil": "2027-05-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        5.8,
+        6.4
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 700000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 660000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/baleno-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/bc889f66-f715-4965-8a94-e4dc2e0bd60f/6ac4c4cecb6e048f95d97775/49e7d9d9-281b-45da-acc4-feee9672539d/slot/Right_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-baleno-2022-cars-gurgaon-32894870179/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "16ae60929cd1298335e1328293f49941950b34872f98c087c901218bcc4ce743"
+        },
+        {
+          "src": "assets/cars/baleno-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/829d33f3-29a2-4651-8bff-202f6bbc8443/6ac4c4cecb6e048f95d97775/c72dece2-6d64-47fe-ad4a-832c840a1c39/slot/Right_Back_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-baleno-2022-cars-gurgaon-32894870179/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "223d73feb9e8da5ec259040ed40108a5809d8c40396c208fc465260f7b5f39ed"
+        },
+        {
+          "src": "assets/cars/baleno-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/ddc64550-bdfa-4778-a368-5ef1e11cffcc/6ac4c4cecb6e048f95d97775/28095da3-028e-4228-b941-969d8fb5c3d3/slot/Dashboard_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-baleno-2022-cars-gurgaon-32894870179/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "265f9657a4bf2e902d9d1a2d707f04a607836bd8d5ddcaf1b9e617e87228bfa4"
+        },
+        {
+          "src": "assets/cars/baleno-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/ca51edfc-cbba-49b4-b40f-9aecb8a9766e/6ac4c4cecb6e048f95d97775/2cba0262-9d0d-4b1e-a14c-8b528d0fb9ce/slot/Left_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-baleno-2022-cars-gurgaon-32894870179/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "8e96ded554c52daa946447c55a99a55b872b9b65c243b7c4ff9326630b8850b4"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 82,
+        "label": "Good condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": false
+    },
+    {
+      "id": "city",
+      "mock": true,
+      "sourceListingId": "16357475126",
+      "name": "Honda City",
+      "variant": "1.5L i-VTEC VX",
+      "year": 2022,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "bodyType": "Sedan",
+      "registration": "HR ** ** 7565",
+      "region": "Gurugram, Haryana",
+      "owners": 2,
+      "registeredOn": "2022-07-08",
+      "validUntil": "2037-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-03",
+      "headline": "The second chapter of ownership.",
+      "declaredKm": 55900,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "city-svc-1",
+          "date": "2022-07-08",
+          "km": 10600,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "city-svc-2",
+          "date": "2023-07-08",
+          "km": 21200,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "city-svc-3",
+          "date": "2024-07-08",
+          "km": 31800,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 5700,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "city-svc-4",
+          "date": "2025-07-08",
+          "km": 42400,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 6350,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "city-svc-5",
+          "date": "2026-07-08",
+          "km": 53000,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 7000,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": false,
+      "lender": "Vehicle finance entry",
+      "closureDocument": false,
+      "claim": {
+        "amount": 18500,
+        "date": "2025-08-16",
+        "part": "Rear bumper and paint",
+        "status": "Settled"
+      },
+      "challans": [
+        {
+          "id": "CH-03-001",
+          "date": "2026-05-18",
+          "offence": "Traffic violation",
+          "amount": 500,
+          "status": "Unpaid"
+        }
+      ],
+      "pucUntil": "2027-05-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        8.2,
+        9.1
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 970000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 930000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/city-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/m/b179c037-ace1-4fc3-9f45-bfafbb4b154c/6aafc4ae8adb0a66360a3df0/239232d0-2d37-41a2-a1ef-cf8f9772ba80/slot/Right_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-honda-city-2022-cars-gurgaon-16357475126/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "f4c1c4aa35670e9201cf985cca219c46eef128a5608d1b4d8e7146161beae91d"
+        },
+        {
+          "src": "assets/cars/city-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/0d9c67fa-a155-421d-bf4e-3912309913b2/6aafc4ae8adb0a66360a3df0/615f4fc8-9d01-48b6-afb3-5a4458ad0ec7/slot/Right_Back_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-honda-city-2022-cars-gurgaon-16357475126/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "ba3b08ad70ff59fe356590cdeea089518000b55d195ee0e5ce0ac97e9b11ba77"
+        },
+        {
+          "src": "assets/cars/city-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/d135bd24-f35f-40a1-8dfe-f0bfde6870f7/6aafc4ae8adb0a66360a3df0/f19d1e20-f6db-43e6-9f87-ba2426cdc462/slot/Dashboard_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-honda-city-2022-cars-gurgaon-16357475126/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "e924e7c42ea45bebb0bc1d952cbe9e51df05070c927c0041a8429ec4800d2c94"
+        },
+        {
+          "src": "assets/cars/city-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/m/58650355-c1e2-4765-a301-fe8bc7b27f32/6aafc4ae8adb0a66360a3df0/c25c3067-81a2-4fbf-b9c7-c6a1186009ab/slot/Left_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-honda-city-2022-cars-gurgaon-16357475126/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "34450e909f9bdc6ce85b60519137d794a7da733842b1260d2e72ca0ad32016ba"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 76,
+        "label": "Good condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": false
+    },
+    {
+      "id": "creta",
+      "mock": true,
+      "sourceListingId": "11715410196",
+      "name": "Hyundai Creta",
+      "variant": "SX Executive 1.5 Petrol",
+      "year": 2021,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "bodyType": "SUV",
+      "registration": "HR ** ** 7702",
+      "region": "Gurugram, Haryana",
+      "owners": 1,
+      "registeredOn": "2021-07-08",
+      "validUntil": "2036-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-04",
+      "headline": "Look closer at the repair.",
+      "declaredKm": 64900,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "creta-svc-1",
+          "date": "2021-07-08",
+          "km": 10300,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "creta-svc-2",
+          "date": "2022-07-08",
+          "km": 20700,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "creta-svc-3",
+          "date": "2023-07-08",
+          "km": 31000,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 5700,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "creta-svc-4",
+          "date": "2024-07-08",
+          "km": 41300,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 6350,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "creta-svc-5",
+          "date": "2025-07-08",
+          "km": 51700,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 7000,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "creta-svc-6",
+          "date": "2026-07-08",
+          "km": 62000,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 7650,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": true,
+      "lender": "Vehicle finance entry",
+      "closureDocument": false,
+      "claim": {
+        "amount": 96000,
+        "date": "2025-08-16",
+        "part": "Front bumper and left headlamp",
+        "status": "Settled"
+      },
+      "challans": [],
+      "pucUntil": "2027-05-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        9.6,
+        10.8
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 1140000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 1100000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/creta-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/c0bb3f1b-beb9-4b07-b24d-f3833988fe78/5243ed34-7890-4bca-8def-62142f3ea4b0/3cbb36fb-1d60-4465-800f-a429859f7143/slot/2.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-creta-2021-cars-jaipur-11715410196/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "1293d12c5b9c71bc638cbe941ebc3f2a4311b3e7f84d60d390ab0b2dd73729f9"
+        },
+        {
+          "src": "assets/cars/creta-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/d9e222ee-7789-410d-9f67-358cc23b1a38/5243ed34-7890-4bca-8def-62142f3ea4b0/2cb1f5e9-36e3-443f-a390-e501f53f8934/slot/4.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-creta-2021-cars-jaipur-11715410196/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "3519a898b72306a1bd1b3a115ba7145b096eca1c0e1bf5a3568e6174f098cc1b"
+        },
+        {
+          "src": "assets/cars/creta-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/24a3bdee-e029-4995-a91d-5244232bfc25/5243ed34-7890-4bca-8def-62142f3ea4b0/5bb9269d-ce59-4ec7-887f-32a9f2fefb3d/slot/11.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-creta-2021-cars-jaipur-11715410196/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "14de6273caf7a7e9df019c5551ee7a370aeaeb6ce2753770541d15f7f677008e"
+        },
+        {
+          "src": "assets/cars/creta-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/98c2b244-0e78-471d-a29b-e5a913a49c2c/5243ed34-7890-4bca-8def-62142f3ea4b0/9e909128-9ba0-4058-a518-d847dcf5669d/slot/8.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-creta-2021-cars-jaipur-11715410196/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "2bb6af88a84771f88075ace95446251b099b77639758921665fd7d6369e34827"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 58,
+        "label": "Moderate condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": false
+    },
+    {
+      "id": "nexon",
+      "mock": true,
+      "sourceListingId": "12040978154",
+      "name": "Tata Nexon",
+      "variant": "Creative Plus S 1.2 Revotron 6 MT",
+      "year": 2025,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "bodyType": "SUV",
+      "registration": "HR ** ** 7839",
+      "region": "Gurugram, Haryana",
+      "owners": 1,
+      "registeredOn": "2025-07-08",
+      "validUntil": "2040-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-05",
+      "headline": "A short history. A few open questions.",
+      "declaredKm": 13500,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "nexon-svc-1",
+          "date": "2025-07-08",
+          "km": 6000,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Tata service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "nexon-svc-2",
+          "date": "2026-07-08",
+          "km": 12000,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Tata service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": true,
+      "lender": "Vehicle finance entry",
+      "closureDocument": false,
+      "claim": null,
+      "challans": [],
+      "pucUntil": "2027-05-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        10.2,
+        11.3
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 1190000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 1150000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/nexon-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/1c0cd455-468c-4bfc-935c-99c8459ccb25/6ab1237f7c7e0e9909442907/ed83ee97-f4d4-49c2-9fd3-b6852a08fb6d/slot/Right_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-tata-nexon-2025-cars-gurgaon-12040978154/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "e0d692444fb63848751f23e5c3c155dd92252dd67f62e0459a7d0d55b7f7e603"
+        },
+        {
+          "src": "assets/cars/nexon-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/57b2a9f6-89f9-4fbb-8878-47b880b301c9/6ab1237f7c7e0e9909442907/7b7f71cd-0179-44b7-9f7f-b02e1e6e6844/slot/Right_Back_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-tata-nexon-2025-cars-gurgaon-12040978154/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "c7b8bb4aa7164961d6614aa9edb57485b92a020a3bc10bee6e667e8a8bdd5f1f"
+        },
+        {
+          "src": "assets/cars/nexon-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/ca840b4e-5dea-4870-95d3-6c068b12cd4b/6ab1237f7c7e0e9909442907/ab88b5b9-e5eb-4ba4-9e24-a471e55ab886/slot/Dashboard_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-tata-nexon-2025-cars-gurgaon-12040978154/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "6412a348230723f8eee8e9497ab66f4636463acde6bc3d11c57f30474da97247"
+        },
+        {
+          "src": "assets/cars/nexon-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/f687639c-3248-4e1b-9a33-df9e1e0c4c2a/6ab1237f7c7e0e9909442907/28433093-95e4-47cc-a1f8-9f29d5847915/slot/Left_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-tata-nexon-2025-cars-gurgaon-12040978154/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "6928294996b6a05821eccee23d13f643a36ae54860eadb4cef65f0bd460c1295"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 87,
+        "label": "Good condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": false
+    },
+    {
+      "id": "i20",
+      "mock": true,
+      "sourceListingId": "10738070128",
+      "name": "Hyundai Elite i20",
+      "variant": "Asta 1.2",
+      "year": 2018,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "bodyType": "Hatchback",
+      "registration": "HR ** ** 7976",
+      "region": "Gurugram, Haryana",
+      "owners": 2,
+      "registeredOn": "2018-07-08",
+      "validUntil": "2033-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-06",
+      "headline": "The service trail goes quiet.",
+      "declaredKm": 81500,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "i20-svc-1",
+          "date": "2021-07-08",
+          "km": 11300,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "i20-svc-2",
+          "date": "2022-07-08",
+          "km": 22700,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "i20-svc-3",
+          "date": "2023-07-08",
+          "km": 34000,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 5700,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "i20-svc-4",
+          "date": "2024-07-08",
+          "km": 45300,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 6350,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": false,
+      "lender": "Vehicle finance entry",
+      "closureDocument": false,
+      "claim": null,
+      "challans": [
+        {
+          "id": "CH-06-001",
+          "date": "2026-05-18",
+          "offence": "Traffic violation",
+          "amount": 2000,
+          "status": "Unpaid"
+        }
+      ],
+      "pucUntil": "2027-05-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        4.1,
+        4.8
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 540000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 500000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/i20-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/3ca4f4fb-736c-4998-89b6-fb3690e91c12/6aeef83e5ad234d93ae54d0d/26b63118-d505-475a-94ce-531756649796/slot/Right_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-elite-i20-2018-cars-gurgaon-10738070128/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "f2293399f591c9cd0db9e98c0a4db128132c0f6bbd937caffa5631bc29dc0f47"
+        },
+        {
+          "src": "assets/cars/i20-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/daaab134-ac24-42a4-8cf1-69127082c5a7/6aeef83e5ad234d93ae54d0d/b33df6dd-7a5b-4a54-9515-3d9679c3fd9f/slot/Right_Back_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-elite-i20-2018-cars-gurgaon-10738070128/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "752dc8fdf5ef0017cd366a0f980cbad09cfe9fc2d739e561fd2b25c6f5511f70"
+        },
+        {
+          "src": "assets/cars/i20-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/acc5fa46-2cba-44c6-8775-9a8330a0213b/6aeef83e5ad234d93ae54d0d/98ab3d65-f154-493f-8122-eb153ca831a9/slot/Dashboard_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-elite-i20-2018-cars-gurgaon-10738070128/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "c27509c80cd0ae2db136eca17e9414df6bebce7cf382c5c3fa8c530cf8106443"
+        },
+        {
+          "src": "assets/cars/i20-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/b49e38c1-6070-4664-972e-db4b6409a2b4/6aeef83e5ad234d93ae54d0d/3e8c1ddf-61a8-4820-b882-c63078c0d101/slot/Left_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-elite-i20-2018-cars-gurgaon-10738070128/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "a38e47b58226a8caa1286f3e05f728b1a53cd10745ed5f72c00ad7fda6c21f13"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 63,
+        "label": "Moderate condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": true
+    },
+    {
+      "id": "venue",
+      "mock": true,
+      "sourceListingId": "10745371113",
+      "name": "Hyundai Venue",
+      "variant": "SX 1.0 Turbo iMT",
+      "year": 2021,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "bodyType": "SUV",
+      "registration": "HR ** ** 8113",
+      "region": "Gurugram, Haryana",
+      "owners": 1,
+      "registeredOn": "2021-07-08",
+      "validUntil": "2036-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-07",
+      "headline": "The loan is closed. Check the entry.",
+      "declaredKm": 47200,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "venue-svc-1",
+          "date": "2021-07-08",
+          "km": 7300,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "venue-svc-2",
+          "date": "2022-07-08",
+          "km": 14700,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "venue-svc-3",
+          "date": "2023-07-08",
+          "km": 22000,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 5700,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "venue-svc-4",
+          "date": "2024-07-08",
+          "km": 29300,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 6350,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "venue-svc-5",
+          "date": "2025-07-08",
+          "km": 36700,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 7000,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "venue-svc-6",
+          "date": "2026-07-08",
+          "km": 44000,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 7650,
+          "source": "Service invoice",
+          "workshop": "Hyundai service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": true,
+      "lender": "Vehicle finance entry",
+      "closureDocument": true,
+      "claim": {
+        "amount": 23500,
+        "date": "2025-08-16",
+        "part": "Rear bumper and paint",
+        "status": "Settled"
+      },
+      "challans": [],
+      "pucUntil": "2027-05-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        6.6,
+        7.3
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 790000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 750000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/venue-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/7f7e043a-427e-49a3-8d8b-ef6432bf3655/6a8d8e60c9b604ea8828752e/8fdd89ef-5423-4440-b57f-c583b3224776/slot/camera-Right-Front-Diagonal.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-venue-2021-cars-jaipur-10745371113/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "1f91cd1390c151020fa97549e83d2b7636d13a57397be862b95b773197e59fc3"
+        },
+        {
+          "src": "assets/cars/venue-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/046eea8b-356e-4805-88e9-c4cdc7195042/6a8d8e60c9b604ea8828752e/8fdd89ef-5423-4440-b57f-c583b3224776/slot/camera-Right-Back-Diagonal.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-venue-2021-cars-jaipur-10745371113/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "1cbf7ed216854fa667232ff480168ff2cb73c39a9260e00ee98d4acc36e117f4"
+        },
+        {
+          "src": "assets/cars/venue-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/26e1df70-7ea7-43fa-93b7-a193b5f76951/1118d6b0-0014-46dc-ae13-fcb72a3cfeac/00a0145f-3d7c-450a-988f-91848ee056f5/slot/6.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-venue-2021-cars-jaipur-10745371113/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "62013454f355e1ebf5021b9bed037141027d53d20b846dc7f418ecb12efb7818"
+        },
+        {
+          "src": "assets/cars/venue-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/f2552035-ba93-4396-a36e-7b7153c247e8/6a8d8e60c9b604ea8828752e/8fdd89ef-5423-4440-b57f-c583b3224776/slot/camera-Left-Front-Diagonal.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-hyundai-venue-2021-cars-jaipur-10745371113/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "5ea36e8b2b98f6a7cbee330a9187d06c074380a0552035a5d2f3b5667eabdb26"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 78,
+        "label": "Good condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": false
+    },
+    {
+      "id": "brezza",
+      "mock": true,
+      "sourceListingId": "29586294175",
+      "name": "Maruti Suzuki Vitara Brezza",
+      "variant": "VDI (O)",
+      "year": 2017,
+      "fuel": "Diesel",
+      "transmission": "Manual",
+      "bodyType": "SUV",
+      "registration": "HR ** ** 8250",
+      "region": "Gurugram, Haryana",
+      "owners": 2,
+      "registeredOn": "2017-07-08",
+      "validUntil": "2032-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-08",
+      "headline": "Make time for the documents.",
+      "declaredKm": 96300,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "brezza-svc-1",
+          "date": "2021-07-08",
+          "km": 15300,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "brezza-svc-2",
+          "date": "2022-07-08",
+          "km": 30700,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "brezza-svc-3",
+          "date": "2023-07-08",
+          "km": 46000,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 5700,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "brezza-svc-4",
+          "date": "2024-07-08",
+          "km": 61300,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 6350,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "brezza-svc-5",
+          "date": "2025-07-08",
+          "km": 76700,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 7000,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "brezza-svc-6",
+          "date": "2026-07-08",
+          "km": 92000,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 7650,
+          "source": "Service invoice",
+          "workshop": "Maruti Suzuki service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": false,
+      "lender": "Vehicle finance entry",
+      "closureDocument": false,
+      "claim": {
+        "amount": 56000,
+        "date": "2025-08-16",
+        "part": "Rear bumper and paint",
+        "status": "Settled"
+      },
+      "challans": [
+        {
+          "id": "CH-08-001",
+          "date": "2026-05-18",
+          "offence": "Traffic violation",
+          "amount": 1500,
+          "status": "Unpaid"
+        }
+      ],
+      "pucUntil": "2026-10-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        4.5,
+        5.2
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 580000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 540000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/brezza-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/d467a608-3a51-4186-b99b-3ed8994c5577/6ad749b081e1aceafcd6a362/a7772b5c-4394-484f-862d-6698c65fd1a1/slot/Right_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-vitara-brezza-2017-cars-faridabad-29586294175/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "05859f1a4610acd00d05c4f336f1643c679d9ad568d30c81844d68290c067769"
+        },
+        {
+          "src": "assets/cars/brezza-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/0686870b-0c5d-4442-8135-ff45630ce716/6ad749b081e1aceafcd6a362/2ff3e260-72f2-452a-8d9a-2cdf990933af/slot/Right_Back_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-vitara-brezza-2017-cars-faridabad-29586294175/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "68c65e875ddac447ce84b2536d62e21022ae1695d4dff5e1564e7656b6cbf4a5"
+        },
+        {
+          "src": "assets/cars/brezza-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/e1ac42eb-1301-439a-9902-4a9b70194f8c/6ad749b081e1aceafcd6a362/b400e6f2-ac7a-425a-885f-864118a4bf43/slot/Dashboard_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-vitara-brezza-2017-cars-faridabad-29586294175/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "b927aaff01f6a35ad61c6535d22d077fa50e14fcd5241af543a19d80b0cee5d7"
+        },
+        {
+          "src": "assets/cars/brezza-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/43141fd3-a019-40a1-8c7b-cceb7d132e92/6ad749b081e1aceafcd6a362/5f4a5347-4bbf-4e73-9277-80a79458b8e3/slot/Left_Front_Diagonal_Image.jpeg",
+          "sourceListing": "https://www.cars24.com/buy-used-maruti-vitara-brezza-2017-cars-faridabad-29586294175/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "5009449bd3a501c9b71e6d43284b8394e34670c0f81dc3a334289a67ca50121f"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 61,
+        "label": "Moderate condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": false
+    },
+    {
+      "id": "tiago",
+      "mock": true,
+      "sourceListingId": "10050916195",
+      "name": "Tata Tiago",
+      "variant": "XT Petrol",
+      "year": 2020,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "bodyType": "Hatchback",
+      "registration": "HR ** ** 8387",
+      "region": "Gurugram, Haryana",
+      "owners": 1,
+      "registeredOn": "2020-07-08",
+      "validUntil": "2035-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-09",
+      "headline": "Everyday miles, dated records.",
+      "declaredKm": 40500,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "tiago-svc-1",
+          "date": "2021-07-08",
+          "km": 6300,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Tata service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "tiago-svc-2",
+          "date": "2022-07-08",
+          "km": 12700,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Tata service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "tiago-svc-3",
+          "date": "2023-07-08",
+          "km": 19000,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 5700,
+          "source": "Service invoice",
+          "workshop": "Tata service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "tiago-svc-4",
+          "date": "2024-07-08",
+          "km": 25300,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 6350,
+          "source": "Service invoice",
+          "workshop": "Tata service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "tiago-svc-5",
+          "date": "2025-07-08",
+          "km": 31700,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 7000,
+          "source": "Service invoice",
+          "workshop": "Tata service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "tiago-svc-6",
+          "date": "2026-07-08",
+          "km": 38000,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 7650,
+          "source": "Service invoice",
+          "workshop": "Tata service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": false,
+      "lender": "Vehicle finance entry",
+      "closureDocument": false,
+      "claim": null,
+      "challans": [],
+      "pucUntil": "2027-05-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        3.2,
+        3.8
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 440000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 400000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/tiago-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/71b3d29b-f849-42ca-a439-ae279e7e5fdb/ddd3cb34-6734-4a14-bd3b-2a7c3fa38ae6/95d3f767-484e-455b-a18d-4a64ea43df1e/slot/2.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-tata-tiago-2020-cars-noida-10050916195/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "95d0397eb2f8fb39e968858ddae1e970846773dff094042ec54f67c6341eb3c1"
+        },
+        {
+          "src": "assets/cars/tiago-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/80cc7901-c48a-4198-8a77-6ff4181f17e3/ddd3cb34-6734-4a14-bd3b-2a7c3fa38ae6/28b62155-3f51-4858-a0f0-e5bd05b88331/slot/4.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-tata-tiago-2020-cars-noida-10050916195/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "100f7c756fa463464e77c9733bf43e2d5b5b413cbde3f176200baee1594a713a"
+        },
+        {
+          "src": "assets/cars/tiago-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/6d0f3c2c-0cae-41d6-92cf-da6529c40385/ddd3cb34-6734-4a14-bd3b-2a7c3fa38ae6/7abce894-3c6f-4f6a-9f00-2efe9de2fab5/slot/11.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-tata-tiago-2020-cars-noida-10050916195/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "c62cab7629b1786c0b544238a52bfcbb2f8ccf1b7ca48718f3df3ed7b24e52e9"
+        },
+        {
+          "src": "assets/cars/tiago-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/617e47ce-e919-4463-8ef9-ae9fa3bda93c/ddd3cb34-6734-4a14-bd3b-2a7c3fa38ae6/cae69302-6049-4095-9fb6-23083fb5fc77/slot/8.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-tata-tiago-2020-cars-noida-10050916195/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "bb4fc0d5604e5789b76943b9fc01b69688f05831d62537c14ef0789e55b2e547"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 80,
+        "label": "Good condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": false
+    },
+    {
+      "id": "amaze",
+      "mock": true,
+      "sourceListingId": "11475072127",
+      "name": "Honda Amaze",
+      "variant": "1.2L i-VTEC VX",
+      "year": 2022,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "bodyType": "Sedan",
+      "registration": "HR ** ** 8524",
+      "region": "Gurugram, Haryana",
+      "owners": 2,
+      "registeredOn": "2022-07-08",
+      "validUntil": "2037-07-07",
+      "reportDate": "2026-11-24",
+      "reportId": "VIB-SAMPLE-20261124-10",
+      "headline": "A transfer worth checking carefully.",
+      "declaredKm": 48800,
+      "sellerDate": "2026-11-20",
+      "services": [
+        {
+          "id": "amaze-svc-1",
+          "date": "2022-07-08",
+          "km": 9200,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 4400,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "amaze-svc-2",
+          "date": "2023-07-08",
+          "km": 18400,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 5050,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "amaze-svc-3",
+          "date": "2024-07-08",
+          "km": 27600,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 5700,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "amaze-svc-4",
+          "date": "2025-07-08",
+          "km": 36800,
+          "work": "Air filter, brake cleaning and fluid checks",
+          "amount": 6350,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        },
+        {
+          "id": "amaze-svc-5",
+          "date": "2026-07-08",
+          "km": 46000,
+          "work": "Engine oil, oil filter and general checks",
+          "amount": 7000,
+          "source": "Service invoice",
+          "workshop": "Honda service centre \u00b7 Gurugram"
+        }
+      ],
+      "lenderActive": true,
+      "lender": "Vehicle finance entry",
+      "closureDocument": false,
+      "claim": {
+        "amount": 31000,
+        "date": "2025-08-16",
+        "part": "Rear bumper and paint",
+        "status": "Settled"
+      },
+      "challans": [
+        {
+          "id": "CH-10-001",
+          "date": "2026-05-18",
+          "offence": "Traffic violation",
+          "amount": 1000,
+          "status": "Unpaid"
+        }
+      ],
+      "pucUntil": "2027-05-09",
+      "policyUntil": "2027-07-07",
+      "policyType": "Comprehensive",
+      "priceRangeLakh": [
+        6.5,
+        7.2
+      ],
+      "askingPrices": [
+        {
+          "date": "2026-03-12",
+          "amount": 780000
+        },
+        {
+          "date": "2026-10-18",
+          "amount": 740000
+        }
+      ],
+      "coverage": {
+        "theft": "Unavailable",
+        "court": "Unavailable",
+        "fir": "Unavailable",
+        "recalls": "Unavailable",
+        "factoryEquipment": "Not verified",
+        "loanBalance": "Unavailable"
+      },
+      "photos": [
+        {
+          "src": "assets/cars/amaze-1.webp",
+          "view": "Right Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/a266533c-33a7-43ad-a4eb-f016d3913f88/374989be-ebdb-46c5-8173-19d25667ebac/2ae72b54-4538-4aa0-bb4a-aa7166abbd06/slot/2.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-honda-amaze-2022-cars-ahmedabad-11475072127/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "05221fa36f3ef27ccb5e46e2560555eebbe1dee01594e3a9e63160c981be447e"
+        },
+        {
+          "src": "assets/cars/amaze-2.webp",
+          "view": "Right Back Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/7fb93914-054e-47b4-b15e-84e05ec2147a/374989be-ebdb-46c5-8173-19d25667ebac/29b213a0-d9c1-4d0a-ae77-21aafc5d798a/slot/4.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-honda-amaze-2022-cars-ahmedabad-11475072127/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "2c4a638863e45dfc19fb6fb8637aaa94eea658c54227d384de110ecdd0bda4fb"
+        },
+        {
+          "src": "assets/cars/amaze-3.webp",
+          "view": "Dashboard",
+          "category": "Interior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/b4078bcb-1c60-424d-a1dd-da7301cd3c8c/374989be-ebdb-46c5-8173-19d25667ebac/c8a70dc1-9171-486f-9193-6f674eb7528b/slot/2.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-honda-amaze-2022-cars-ahmedabad-11475072127/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "beecec853d79840e841c27aa2f63346f633eac2edd9673a13c4f8d798949a3a2"
+        },
+        {
+          "src": "assets/cars/amaze-4.webp",
+          "view": "Left Front Diagonal",
+          "category": "Exterior",
+          "sourceUrl": "https://media.cars24.com/hello-ar/dev/transformed/uploads/91735abf-4ea6-49e5-998e-5ef5de489dcb/374989be-ebdb-46c5-8173-19d25667ebac/affd021b-d836-4597-8249-f54bfb2994c5/slot/8.jpg",
+          "sourceListing": "https://www.cars24.com/buy-used-honda-amaze-2022-cars-ahmedabad-11475072127/",
+          "sourceLabel": "CARS24 listing photograph",
+          "retrievedOn": "2026-11-24",
+          "capturedOn": null,
+          "isReferencePhoto": true,
+          "relatedRecordId": null,
+          "sha256": "4cf21a7e9617b7b2033cd16130fd80dd72c4c4b6be0b5858ee24c501a1914910"
+        }
+      ],
+      "score": {
+        "mode": "preset-sample",
+        "value": 73,
+        "label": "Good condition score",
+        "reason": "Preset sample value for the report design. No production score calculation or physical assessment has been performed."
+      },
+      "usage": "Private",
+      "modifications": "Not recorded",
+      "dataAsOf": "2026-11-24",
+      "serviceGap": false
+    }
+  ]
+}
